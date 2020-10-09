@@ -65,11 +65,11 @@ namespace Com.Oisoi.NahShop
 			{
 				playerName.text = photonView.Owner.NickName;
 
-				SaveData = GetComponent<saveData>();
-				if (SaveData != null)
-				{
-					SaveData.username = photonView.Owner.NickName;
-				}
+				//SaveData = GetComponent<saveData>();
+				//if (SaveData != null)
+				//{
+				//	SaveData.username = photonView.Owner.NickName;
+				//}
 			}
 		}
 
@@ -81,10 +81,10 @@ namespace Com.Oisoi.NahShop
 
 			ProcessInputs();
 			
-			if (SaveData != null)
-			{
-				SaveData.updatePosRotMessage();
-			}
+			//if (SaveData != null)
+			//{
+			//	SaveData.updatePosRotMessage();
+			//}
 		}
 
 		#endregion

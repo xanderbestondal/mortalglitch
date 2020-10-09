@@ -1,7 +1,18 @@
+disable saving positions and chat to text files
+
+add fire: https://assetstore.unity.com/packages/essentials/tutorial-projects/unity-particle-pack-127325
+If you want to import these effects into an existing project without affecting your current Project Settings, make sure to uncheck the Project Settings folder in the Importer Window before clicking Import!
+
+get copcar
+https://www.turbosquid.com/3d-models/3d-honda-civic-type-r-model-1564810
+
+add print for frame rate and current frame
+if current frame is slow in the beginning(lag), then keep a temporary loading screen untill we reach a certain frame..
+maybe even make the player to face the nightshop so all that is loaded
+
 
 add info at start: escape to show mouse , arrows to move. klikstuff
 add audio bruitage
-avatr
 
 check when gaining focus on web screen if we can simulate click in the screen
 

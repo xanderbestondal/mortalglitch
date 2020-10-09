@@ -121,8 +121,8 @@ namespace Com.Oisoi.NahShop
 			string addedString =  '\n' + sendingUser + " " + "  : " + b;
 			chatColumn.text = chatColumn.text + addedString;
 
-			SaveData.username = userName;
-			SaveData.updateChatMessage(addedString);
+			//SaveData.username = userName;
+			//SaveData.updateChatMessage(addedString);
 		}
 	}
 }
