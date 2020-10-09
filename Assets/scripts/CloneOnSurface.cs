@@ -17,6 +17,19 @@ public class CloneOnSurface : MonoBehaviour {
 
 	int maxRows_y;
 
+	public GameObject[] allTaggedObjects;
+
+	public void update()
+	{
+		allTaggedObjects = GameObject.FindGameObjectsWithTag("grabable");
+		foreach (GameObject go in allTaggedObjects)
+		{
+			doPhotonStuff(go);
+
+			go.GetComponent<Renderer>().shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
+			go.GetComponent<Renderer>().receiveShadows = false	;
+		}
+	}
 	public void generate()
 	{
 
@@ -53,17 +66,11 @@ public class CloneOnSurface : MonoBehaviour {
 				GameObject go = Instantiate(scatterobjects[objindex], transform, true);
 				makeUniqueName(go);// go.name + (x + y).ToString();
 
-				//doUdonStuff(go);
-				PhotonView phtnVw = go.AddComponent<PhotonView>();
-				//PhotonRigidbodyView phtnRbVw = go.AddComponent<PhotonRigidbodyView>();
-				PhotonTransformView phtnTfVw = go.AddComponent<PhotonTransformView>();
-				//phtnRbVw.m_SynchronizeAngularVelocity = true;
-				List<Component> ObservedComponents = new List<Component>();
-				//ObservedComponents.Add(phtnRbVw);
-				ObservedComponents.Add(phtnTfVw);
-				phtnVw.ObservedComponents = ObservedComponents;
-				phtnVw.Synchronization = ViewSynchronization.UnreliableOnChange;
-				phtnVw.OwnershipTransfer = OwnershipOption.Takeover;
+
+
+				doPhotonStuff(go);
+
+
 
 				bool round = false;
 				if (checkRoundness(go) < .01f)
@@ -122,6 +129,28 @@ public class CloneOnSurface : MonoBehaviour {
 				break;
 		}
 
+	}
+
+	void doPhotonStuff(GameObject go)
+	{
+
+		PhotonView phtnVw = go.GetComponent<PhotonView>();
+		if(phtnVw == null)
+			phtnVw = go.AddComponent<PhotonView>();
+
+		PhotonTransformView phtnTfVw = go.GetComponent<PhotonTransformView>();
+		if(phtnTfVw == null)
+			phtnTfVw = go.AddComponent<PhotonTransformView>();
+
+		//PhotonRigidbodyView phtnRbVw = go.AddComponent<PhotonRigidbodyView>();
+		//phtnRbVw.m_SynchronizeAngularVelocity = true;
+		//ObservedComponents.Add(phtnRbVw);
+
+		List<Component> ObservedComponents = new List<Component>();
+		ObservedComponents.Add(phtnTfVw);
+		phtnVw.ObservedComponents = ObservedComponents;
+		phtnVw.Synchronization = ViewSynchronization.Off;
+		phtnVw.OwnershipTransfer = OwnershipOption.Takeover;
 	}
 
 	float checkRoundness(GameObject go)

@@ -43,5 +43,9 @@ public class CloneOnSurfaceEditor : Editor
 		{
 			cloneOnSurface.generate();
 		}
+		if (GUILayout.Button("update all grabable tagged objects"))
+		{
+			cloneOnSurface.update();
+		}
 	}
 }

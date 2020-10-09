@@ -29,7 +29,9 @@ MonoBehaviour:
   - Assets/models/nightShop/shelves.blend
   - Assets/models/roads/roads.blend
   - Assets/models/nightShop/ openSign.blend
-  modifiedAssetPaddingHash: d6a958ff7e4dfff0ff226c4f27901ac29c09ecc0b35634b7465031eefb2f39aa1c7e9363df4dfff0e55031ee8cdb894b0de8d3f3fa4dfff069d14eb7da4608c8
+  - Assets/models/nightShop/openSign.blend
+  - Assets/models/cars/copcar.blend
+  modifiedAssetPaddingHash: d6a958ff7e4dfff0ff226c4f27901ac29c09ecc0b35634b7465031eefb2f39aa1c7e9363df4dfff0e55031ee8cdb894b0de8d3f3fa4dfff069d14eb7da4608c8da4608c81b3a8033
   modifiedMeshList: []
   modifiedMeshPaddingList: 
   modifiedAssets:
@@ -480,6 +482,14 @@ MonoBehaviour:
     - Cube
     padding: d6000000
     unwrapper: 00000000
+  - meshName:
+    - Cube
+    padding: d6000000
+    unwrapper: 00000000
+  - meshName:
+    - car
+    padding: 0f000000
+    unwrapper: 00000000
   assetList:
   - Assets/Bakery/examples/content/sponza/bush.FBX
   - Assets/Bakery/examples/content/floor_lamp.FBX
@@ -503,7 +513,30 @@ MonoBehaviour:
   - Assets/models/nightShop/TV.blend
   - Assets/NahGraphics/POSTER NAH.blend
   - Assets/models/character_cig.blend
-  uvOverlapAssetList: 00000000ffffffff00000000010100000101000000000000000000000000000000000000000000000000000000000000010100000101000001010000ffffffff010100000101000001010000010100000000000000000000
+  - Assets/models/cars/copcar.blend
+  - Assets/models/nightShop/products.blend
+  - Assets/EffectExamples/Misc Effects/Animations/@EllenIdle.fbx
+  - Assets/Shared/Environment/Models/Railing.fbx
+  - Assets/Shared/Environment/Models/SideWall.fbx
+  - Assets/EffectExamples/Misc Effects/Models/Ellen.fbx
+  - Assets/Shared/Environment/Models/Stairs.fbx
+  - Assets/Shared/Environment/Models/AreaLine.fbx
+  - Assets/EffectExamples/Magic Effects/Models/IceLance.FBX
+  - Assets/Shared/Environment/Models/FloorLong.fbx
+  - Assets/Shared/Environment/Models/SmallLight.fbx
+  - Assets/Shared/Environment/Models/Step.fbx
+  - Assets/EffectExamples/Water Effects/Models/DropSplash.fbx
+  - Assets/EffectExamples/Misc Effects/Models/Candle.fbx
+  - Assets/EffectExamples/Magic Effects/Models/IceShard.FBX
+  - Assets/Shared/Environment/Models/EndWall.fbx
+  - Assets/EffectExamples/Magic Effects/Models/RockDebris.FBX
+  - Assets/EffectExamples/Magic Effects/Models/RockSpike.FBX
+  - Assets/Shared/Environment/Models/CornerWall.fbx
+  - Assets/EffectExamples/Misc Effects/Models/Flakes.fbx
+  - Assets/EffectExamples/Misc Effects/Models/FireFly.fbx
+  - Assets/EffectExamples/Smoke & Steam Effects/Models/RockDebris.FBX
+  - Assets/Shared/Environment/Models/LongOverhangWall.fbx
+  uvOverlapAssetList: 00000000ffffffff00000000010100000101000000000000000000000000000000000000000000000000000000000000010100000101000001010000ffffffff0101000001010000010100000101000000000000000000000101000001010000000000000101000001010000000000000000000000000000010100000000000001010000000000000000000001010000010100000101000000000000000000000101000001010000010100000000000001010000
   xatlasWarningShown: 0
   checkerPreviewOn: 0
   rtSceneViewPreviewOn: 0
@@ -580,5 +613,5 @@ MonoBehaviour:
   renderSettingsRTPVSceneView: 0
   renderSettingsRTPVWidth: 640
   renderSettingsRTPVHeight: 360
-  modifiedMeshPaddingArray: 2700000000010000
-  modifiedMeshUnwrapperArray: 0000000000000000
+  modifiedMeshPaddingArray: 0f000000
+  modifiedMeshUnwrapperArray: 00000000

@@ -29,4 +29,6 @@ MonoBehaviour:
   - Assets/models/nightShop/shelves.blend
   - Assets/models/roads/roads.blend
   - Assets/models/nightShop/ openSign.blend
-  modifiedAssetPaddingHash: d6a958ff7e4dfff0ff226c4f27901ac29c09ecc0b35634b7465031eefb2f39aa1c7e9363df4dfff0e55031ee8cdb894b0de8d3f3fa4dfff069d14eb7da4608c8
+  - Assets/models/nightShop/openSign.blend
+  - Assets/models/cars/copcar.blend
+  modifiedAssetPaddingHash: d6a958ff7e4dfff0ff226c4f27901ac29c09ecc0b35634b7465031eefb2f39aa1c7e9363df4dfff0e55031ee8cdb894b0de8d3f3fa4dfff069d14eb7da4608c8da4608c81b3a8033

@@ -122,7 +122,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &2022064250
+--- !u!1 &1812134777
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -130,8 +130,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2022064252}
-  - component: {fileID: 2022064251}
+  - component: {fileID: 1812134779}
+  - component: {fileID: 1812134778}
   m_Layer: 0
   m_Name: New Game Object
   m_TagString: Untagged
@@ -139,13 +139,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!220 &2022064251
+--- !u!220 &1812134778
 LightProbeGroup:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2022064250}
+  m_GameObject: {fileID: 1812134777}
   m_Enabled: 1
   m_SourcePositions:
   - {x: -11.720739, y: 2.3363895, z: -8.34069}
@@ -393,10 +393,10 @@ LightProbeGroup:
   - {x: -2.5520062, y: 1.8623632, z: 5.2712154}
   - {x: -2.5520062, y: 2.82625, z: 5.2712154}
   - {x: -2.5520062, y: -0.065410614, z: 5.2712154}
-  - {x: -2.3171604, y: 0.8984763, z: 4.354201}
-  - {x: -2.3171604, y: 1.8623632, z: 4.354201}
-  - {x: -2.3171604, y: 2.82625, z: 4.354201}
-  - {x: -2.3171604, y: -0.065410614, z: 4.354201}
+  - {x: -1.842107, y: 0.8984763, z: 4.2016377}
+  - {x: -1.842107, y: 1.8623632, z: 4.2016377}
+  - {x: -1.842107, y: 2.82625, z: 4.2016377}
+  - {x: -1.842107, y: -0.065410614, z: 4.2016377}
   - {x: -1.0838146, y: 2.3363895, z: 9.472176}
   - {x: 5.147562, y: 2.3363895, z: 9.238659}
   - {x: -1.0838146, y: 0.07915497, z: 9.472176}
@@ -410,13 +410,13 @@ LightProbeGroup:
   - {x: 13.087418, y: 1.3122578, z: 5.4851594}
   - {x: 13.132706, y: 1.3122578, z: -5.652102}
   m_Dering: 1
---- !u!4 &2022064252
+--- !u!4 &1812134779
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2022064250}
+  m_GameObject: {fileID: 1812134777}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2.6031213, y: 0.096141815, z: 0.017311275}
   m_LocalScale: {x: 1, y: 1, z: 1}
