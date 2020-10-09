@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05ca84e725c7c764aa5ed097918d14b7, type: 3}
+  m_Name: ftLocalStorage
+  m_EditorClassIdentifier: 
+  modifiedAssetPathList:
+  - Assets/Bakery/examples/content/sponza/sponza.FBX
+  - Assets/models/nightShop/light_TL.blend
+  - Assets/models/parkinglot/dixiToilet.blend
+  - Assets/models/parkinglot/parkinglot.blend
+  - Assets/models/nightShop/fridge_01.blend
+  - Assets/models/nightShop/cashRegister.blend
+  - Assets/models/parkinglot/asphaltPatch.blend
+  - Assets/models/nightShop/counter.blend
+  - Assets/models/nightShop/counter_rack.blend
+  - Assets/models/nightShop/shelves_2.blend
+  - Assets/models/buildings/nightshop_sideBuilding.blend
+  - Assets/models/nightShop/shelves_corner.blend
+  - Assets/models/nightShop/nightshop.blend
+  - Assets/models/nightShop/shelves.blend
+  - Assets/models/roads/roads.blend
+  - Assets/models/nightShop/ openSign.blend
+  modifiedAssetPaddingHash: d6a958ff7e4dfff0ff226c4f27901ac29c09ecc0b35634b7465031eefb2f39aa1c7e9363df4dfff0e55031ee8cdb894b0de8d3f3fa4dfff069d14eb7da4608c8

@@ -1,0 +1,238 @@
+fileFormatVersion: 2
+guid: 58eec7eee47c1c340af24330ab12a5fe
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: bl-orange
+    100002: break
+    100004: Chrysler_Pacifica
+    100006: dark
+    100008: dark.001
+    100010: dark2
+    100012: fl-mirror
+    100014: fl-orange
+    100016: halobump
+    100018: inside
+    100020: mainbody
+    100022: mainbody-doors
+    100024: //RootNode
+    100026: Object01
+    100028: Object03
+    100030: orange
+    100032: Plane01
+    100034: Plane02
+    100036: Plane03
+    100038: RAD_HL
+    100040: RAD_HR
+    100042: RAD_VL
+    100044: RAD_VR
+    100046: shields
+    400000: bl-orange
+    400002: break
+    400004: Chrysler_Pacifica
+    400006: dark
+    400008: dark.001
+    400010: dark2
+    400012: fl-mirror
+    400014: fl-orange
+    400016: halobump
+    400018: inside
+    400020: mainbody
+    400022: mainbody-doors
+    400024: //RootNode
+    400026: Object01
+    400028: Object03
+    400030: orange
+    400032: Plane01
+    400034: Plane02
+    400036: Plane03
+    400038: RAD_HL
+    400040: RAD_HR
+    400042: RAD_VL
+    400044: RAD_VR
+    400046: shields
+    2100000: pacifica-alu.001
+    2100002: pacifica-tire.001
+    2100004: pacifica-tire-bmp.001
+    2100006: pacifica-logo.001
+    2100008: pacifica-chrome.001
+    2100010: pacifica-lights-bulb.001
+    2100012: pacifica-black.001
+    2100014: pacifica-lights-mirror.001
+    2100016: pacifica-glass.001
+    2100018: pacifica-fl-frame.001
+    2100020: pacifica-glass black.001
+    2100022: pacifica-glass dark.001
+    2100024: pacifica-mirror.001
+    2100026: pacifica-fl-mirror.001
+    2100028: pacifica-dark.001
+    2100030: pacifica-main body.001
+    2100032: pacifica-shields.001
+    2100034: pacifica-3stop.001
+    2100036: pacifica-orange.001
+    2100038: pacifica-lights-lens.001
+    2100040: pacifica-fl-orange.001
+    2100042: pacifica-dark2.001
+    2100044: pacifica-bl-red.001
+    2100046: No Name
+    2100048: Material.001
+    2100050: car
+    2100052: glass
+    2300000: bl-orange
+    2300002: break
+    2300004: Chrysler_Pacifica
+    2300006: dark
+    2300008: dark.001
+    2300010: dark2
+    2300012: fl-mirror
+    2300014: fl-orange
+    2300016: halobump
+    2300018: inside
+    2300020: mainbody
+    2300022: mainbody-doors
+    2300024: Object01
+    2300026: Object03
+    2300028: orange
+    2300030: Plane01
+    2300032: Plane02
+    2300034: Plane03
+    2300036: RAD_HL
+    2300038: RAD_HR
+    2300040: RAD_VL
+    2300042: RAD_VR
+    2300044: shields
+    2300046: //RootNode
+    3300000: bl-orange
+    3300002: break
+    3300004: Chrysler_Pacifica
+    3300006: dark
+    3300008: dark.001
+    3300010: dark2
+    3300012: fl-mirror
+    3300014: fl-orange
+    3300016: halobump
+    3300018: inside
+    3300020: mainbody
+    3300022: mainbody-doors
+    3300024: Object01
+    3300026: Object03
+    3300028: orange
+    3300030: Plane01
+    3300032: Plane02
+    3300034: Plane03
+    3300036: RAD_HL
+    3300038: RAD_HR
+    3300040: RAD_VL
+    3300042: RAD_VR
+    3300044: shields
+    3300046: //RootNode
+    4300000: RAD_VL
+    4300002: RAD_HL
+    4300004: RAD_VR
+    4300006: RAD_HR
+    4300008: Chrysler_Pacifica
+    4300010: fl-mirror
+    4300012: dark
+    4300014: dark2
+    4300016: mainbody
+    4300018: mainbody-doors
+    4300020: shields
+    4300022: inside
+    4300024: break
+    4300026: orange
+    4300028: halobump
+    4300030: fl-orange
+    4300032: bl-orange
+    4300034: Object03
+    4300036: Plane03
+    4300038: Plane02
+    4300040: Object01
+    4300042: Plane01
+    4300044: dark.001
+    4300046: car
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

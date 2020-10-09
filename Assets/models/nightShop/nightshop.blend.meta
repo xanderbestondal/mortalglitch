@@ -1,0 +1,266 @@
+fileFormatVersion: 2
+guid: 261823fdfe46c5d448c05e0b4b04dea9
+ModelImporter:
+  serializedVersion: 19300
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: lowerWall
+  - first:
+      1: 100002
+    second: //RootNode
+  - first:
+      1: 100004
+    second: walls
+  - first:
+      1: 100006
+    second: windows
+  - first:
+      1: 100008
+    second: windowShelves
+  - first:
+      1: 100010
+    second: windowWood
+  - first:
+      1: 100012
+    second: shelf_plane
+  - first:
+      1: 100014
+    second: doorstep
+  - first:
+      1: 100016
+    second: floor
+  - first:
+      4: 400000
+    second: lowerWall
+  - first:
+      4: 400002
+    second: //RootNode
+  - first:
+      4: 400004
+    second: walls
+  - first:
+      4: 400006
+    second: windows
+  - first:
+      4: 400008
+    second: windowShelves
+  - first:
+      4: 400010
+    second: windowWood
+  - first:
+      4: 400012
+    second: shelf_plane
+  - first:
+      4: 400014
+    second: doorstep
+  - first:
+      4: 400016
+    second: floor
+  - first:
+      21: 2100000
+    second: windowFrame
+  - first:
+      21: 2100002
+    second: concrete
+  - first:
+      21: 2100004
+    second: floor
+  - first:
+      21: 2100006
+    second: walls
+  - first:
+      21: 2100008
+    second: windowGlass
+  - first:
+      21: 2100010
+    second: walls_outside
+  - first:
+      23: 2300000
+    second: lowerWall
+  - first:
+      23: 2300002
+    second: walls
+  - first:
+      23: 2300004
+    second: windows
+  - first:
+      23: 2300006
+    second: windowShelves
+  - first:
+      23: 2300008
+    second: windowWood
+  - first:
+      23: 2300010
+    second: shelf_plane
+  - first:
+      23: 2300012
+    second: doorstep
+  - first:
+      23: 2300014
+    second: floor
+  - first:
+      33: 3300000
+    second: lowerWall
+  - first:
+      33: 3300002
+    second: walls
+  - first:
+      33: 3300004
+    second: windows
+  - first:
+      33: 3300006
+    second: windowShelves
+  - first:
+      33: 3300008
+    second: windowWood
+  - first:
+      33: 3300010
+    second: shelf_plane
+  - first:
+      33: 3300012
+    second: doorstep
+  - first:
+      33: 3300014
+    second: floor
+  - first:
+      43: 4300000
+    second: windowWood
+  - first:
+      43: 4300002
+    second: lowerWall
+  - first:
+      43: 4300004
+    second: walls
+  - first:
+      43: 4300006
+    second: windowShelves
+  - first:
+      43: 4300008
+    second: windows
+  - first:
+      43: 4300010
+    second: shelf_plane
+  - first:
+      43: 4300012
+    second: floor
+  - first:
+      43: 4300014
+    second: doorstep
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: concrete
+    second: {fileID: 2100000, guid: 8108ff58c6017cc4fa0b2d9f841c140f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: floor
+    second: {fileID: 2100000, guid: ca9db03f7a8b20f4ea9ccb8cca4453da, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: walls
+    second: {fileID: 2100000, guid: ea2b32913ba7bea439a3e07b654ba253, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: windowFrame
+    second: {fileID: 2100000, guid: 0b8bde20de85dcd4580927f463e8655a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: windowGlass
+    second: {fileID: 2100000, guid: 82ce088f7ebe6b748970425ce787bd7a, type: 2}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties:
+    - '#BAKERY{"meshName":["windowWood","windows","walls","lowerWall","floor"],"padding":[27,30,6,37,17],"unwrapper":[0,0,0,0,0]}'
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 0
+  humanoidOversampling: 1
+  avatarSetup: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

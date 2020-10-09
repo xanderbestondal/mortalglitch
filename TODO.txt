@@ -1,0 +1,31 @@
+
+add info at start: escape to show mouse , arrows to move. klikstuff
+add audio bruitage
+avatr
+
+check when gaining focus on web screen if we can simulate click in the screen
+
+update web gl template
+
+reconstruct animation : https://www.google.com/search?q=unity+generate+animation+at+runtime&oq=unity+generate+animation+at+runtime&aqs=chrome..69i57j0l3.9711j0j4&sourceid=chrome&ie=UTF-8
+
+https://docs.unity3d.com/ScriptReference/Application.OpenURL.html
+
+
+check: Exiting receive thread (inside loop). Server: wss://GCAMS044.exitgames.com:19091:0 Error: An error has occurred in sending data.
+
+unity input manager automatically switch azerty qwerty
+
+object lower than -5 ony respawns
+
+
+IF CHATTING DONT USE P FOR MUSIC or jump
+
+
+chat names niet consistent
+
+syncing late joining players
+https://forum.photonengine.com/discussion/8667/how-to-sync-up-created-and-destroyed-gameobjects-for-late-joining-players
+
+FULLSCREEN tut
+https://www.youtube.com/watch?v=uO9WYfqBW-s&ab_channel=AlienTechLAB
