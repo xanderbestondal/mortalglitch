@@ -21,14 +21,25 @@ public class CloneOnSurface : MonoBehaviour {
 
 	public void update()
 	{
+
+		int grabableObjectCount = 0;
 		allTaggedObjects = GameObject.FindGameObjectsWithTag("grabable");
 		foreach (GameObject go in allTaggedObjects)
 		{
-			doPhotonStuff(go);
 
-			go.GetComponent<Renderer>().shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
-			go.GetComponent<Renderer>().receiveShadows = false	;
+			//doPhotonStuff(go);
+
+			//go.GetComponent<Renderer>().shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.Off;
+			//go.GetComponent<Renderer>().receiveShadows = false	;
+			//go.GetComponent<Renderer>().reflectionProbeUsage = UnityEngine.Rendering.ReflectionProbeUsage.Off;
+			//go.GetComponent<Collider>().isTrigger = true;
+
+			go.SetActive(false);
+
+			grabableObjectCount++;
 		}
+
+		print("UPDATED " + grabableObjectCount + " grabable objects");
 	}
 	public void generate()
 	{
@@ -135,22 +146,28 @@ public class CloneOnSurface : MonoBehaviour {
 	{
 
 		PhotonView phtnVw = go.GetComponent<PhotonView>();
-		if(phtnVw == null)
-			phtnVw = go.AddComponent<PhotonView>();
+		//if(phtnVw == null)
+		//	phtnVw = go.AddComponent<PhotonView>();
 
 		PhotonTransformView phtnTfVw = go.GetComponent<PhotonTransformView>();
-		if(phtnTfVw == null)
-			phtnTfVw = go.AddComponent<PhotonTransformView>();
+		//if(phtnTfVw == null)
+		//	phtnTfVw = go.AddComponent<PhotonTransformView>();
+
+		// TESTING IF ITS NOT CRASHING WITHOUT transform view
+		if (phtnVw != null)
+			DestroyImmediate(phtnVw);
+		if (phtnTfVw != null)
+			DestroyImmediate(phtnTfVw);
 
 		//PhotonRigidbodyView phtnRbVw = go.AddComponent<PhotonRigidbodyView>();
 		//phtnRbVw.m_SynchronizeAngularVelocity = true;
 		//ObservedComponents.Add(phtnRbVw);
 
-		List<Component> ObservedComponents = new List<Component>();
-		ObservedComponents.Add(phtnTfVw);
-		phtnVw.ObservedComponents = ObservedComponents;
-		phtnVw.Synchronization = ViewSynchronization.Off;
-		phtnVw.OwnershipTransfer = OwnershipOption.Takeover;
+		//List<Component> ObservedComponents = new List<Component>();
+		//ObservedComponents.Add(phtnTfVw);
+		//phtnVw.ObservedComponents = ObservedComponents;
+		//phtnVw.Synchronization = ViewSynchronization.Off;
+		//phtnVw.OwnershipTransfer = OwnershipOption.Takeover;
 	}
 
 	float checkRoundness(GameObject go)

@@ -26,6 +26,7 @@ namespace Com.Oisoi.NahShop
 		public override void OnLeftRoom()
 		{
 			SceneManager.LoadScene(0);
+			Cursor.lockState = CursorLockMode.None;
 		}
 
 
@@ -37,6 +38,12 @@ namespace Com.Oisoi.NahShop
 		public void LeaveRoom()
 		{
 			PhotonNetwork.LeaveRoom();
+		}
+
+		private void Update()
+		{
+			if (Input.GetKeyDown(KeyCode.LeftControl) && Input.GetKeyDown(KeyCode.Q))
+				LeaveRoom();
 		}
 
 
@@ -111,6 +118,17 @@ namespace Com.Oisoi.NahShop
 
 				LoadArena();
 			}
+		}
+
+		public override void OnDisconnected(DisconnectCause cause)
+		{
+			print(cause);
+			//base.OnDisconnected(cause);
+		}
+		public override void OnErrorInfo(ErrorInfo errorInfo)
+		{
+			print(errorInfo.Info);
+			//base.OnErrorInfo(errorInfo);
 		}
 
 

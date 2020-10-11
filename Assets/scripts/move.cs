@@ -107,6 +107,8 @@ public class move : MonoBehaviourPun
 		// executed on all clients
 		anim.GetBoneTransform(HumanBodyBones.Chest).localRotation = camRot.localRotation;
 		
+
+		// after this execute only for local player
 		if (photonView.IsMine == false && PhotonNetwork.IsConnected == true)
 		{
 			return;
@@ -128,7 +130,8 @@ public class move : MonoBehaviourPun
 		// ungrab whatever is grabbed atm
 		ungrab_parent();
 		if(itemUnGrabbed != null) // also ungrab at clients
-			PhotonView.Get(this).RPC("unGrabOnAllClients", RpcTarget.OthersBuffered, itemUnGrabbed.GetComponent<PhotonView>().ViewID); // send objPhotonViewId and playerPhotonViewId
+			if(itemUnGrabbed.GetComponent<PhotonView>() != null)
+				PhotonView.Get(this).RPC("unGrabOnAllClients", RpcTarget.OthersBuffered, itemUnGrabbed.GetComponent<PhotonView>().ViewID); // send objPhotonViewId and playerPhotonViewId
 
 		RaycastHit hit;
 		// Does the ray intersect any objects
@@ -137,23 +140,25 @@ public class move : MonoBehaviourPun
 			if (hit.transform.tag == "grabable")
 			{
 				itemGrabbed = hit.transform;
-				
+
 				// if we are grabbing the itemUnGrabbed, prevent that and set itemGrabbed to null
 				if (itemGrabbed == itemUnGrabbed)
 				{
 					itemGrabbed = null;
 				}
 				else
-				{ 
+				{
 					// GRAB !
 					grabParent();
 
-					PhotonView photonView = itemGrabbed.GetComponent<PhotonView>();
-					photonView.TransferOwnership(PhotonNetwork.LocalPlayer);
-					// send message to other clients that this object should be kinematic. and stopped parenting from hand of player at the other clients side
-					PhotonView.Get(this).RPC("grabOnAllClients", RpcTarget.OthersBuffered, itemGrabbed.GetComponent<PhotonView>().ViewID, GetComponent<PhotonView>().ViewID); // send objPhotonViewId and playerPhotonViewId
+					PhotonView photonView_grabbedItem = itemGrabbed.GetComponent<PhotonView>();
+					if (photonView_grabbedItem != null)
+					{
+						photonView_grabbedItem.TransferOwnership(PhotonNetwork.LocalPlayer);
+						// send message to other clients that this object should be kinematic. and stopped parenting from hand of player at the other clients side
+						PhotonView.Get(this).RPC("grabOnAllClients", RpcTarget.OthersBuffered, photonView_grabbedItem.ViewID, GetComponent<PhotonView>().ViewID); // send objPhotonViewId and playerPhotonViewId
+					}
 				}
-
 			}
 		}
 		
@@ -168,7 +173,8 @@ public class move : MonoBehaviourPun
 
 		itemGrabbed.GetComponent<Rigidbody>().isKinematic = true;
 		itemGrabbed.GetComponent<Collider>().isTrigger = true;
-		itemGrabbed.GetComponent<PhotonView>().Synchronization = ViewSynchronization.Off; // stop syncing, its parented, for now
+		if(itemGrabbed.GetComponent<PhotonView>() != null)
+			itemGrabbed.GetComponent<PhotonView>().Synchronization = ViewSynchronization.Off; // stop syncing, its parented, for now
 	}
 
 	[PunRPC]
@@ -208,7 +214,8 @@ public class move : MonoBehaviourPun
 			itemGrabbed.GetComponent<Rigidbody>().isKinematic = false;
 			itemGrabbed.GetComponentInChildren<Collider>().isTrigger = false;
 			itemGrabbed.GetComponent<Rigidbody>().AddForce(camTarg.TransformDirection(Vector3.forward)*333);
-			itemGrabbed.GetComponent<PhotonView>().Synchronization = ViewSynchronization.UnreliableOnChange; // stop syncing, its parented, for now
+			if(itemGrabbed.GetComponent<PhotonView>() != null)
+				itemGrabbed.GetComponent<PhotonView>().Synchronization = ViewSynchronization.UnreliableOnChange; // stop syncing, its parented, for now
 
 			anim.SetTrigger("throw");
 
