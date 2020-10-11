@@ -179,7 +179,6 @@ namespace Com.Oisoi.NahShop
 		/// </summary>
 		public override void OnDisconnected(DisconnectCause cause)
 		{
-			print(cause);
 			LogFeedback("<Color=Red>OnDisconnected</Color> " + cause);
 			Debug.LogError("PUN Basics Tutorial/Launcher:Disconnected");
 

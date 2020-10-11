@@ -1,21 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Photon.Pun;
 
-public class ToggleAudio : MonoBehaviourPun
+public class ToggleAudio : MonoBehaviour
 {
 
 	AudioSource ass;
     // Start is called before the first frame update
     void Start()
     {
-		// dont play audio from other players
-		if (transform.parent.GetComponent<PhotonView>().IsMine == false)
-		{
-			gameObject.SetActive(false);
-		}
-
 		ass = GetComponent<AudioSource>();
 	}
 
