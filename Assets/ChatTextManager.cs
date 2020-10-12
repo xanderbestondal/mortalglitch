@@ -119,6 +119,8 @@ namespace Com.Oisoi.NahShop
 
 			//string addedString =  '\n' + sendingUser + " " + speakingList[Random.Range(0, speakingList.Length)] + "  : " + b;
 			string addedString =  '\n' + sendingUser + " " + "  : " + b;
+			if (info.Sender.IsMasterClient)
+				addedString = '\n' + sendingUser + " " + "  : " + b + " (master)";
 			chatColumn.text = chatColumn.text + addedString;
 
 			//SaveData.username = userName;

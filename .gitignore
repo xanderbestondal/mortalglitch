@@ -6,6 +6,10 @@
 /[Tt]emp/
 /[Oo]bj/
 /[Bb]uild/
+/[Bb]uild_nahshop/
+/[Bb]uild_mortalGlitch/
+/[Bb]uild_working/
+/[Bb]uild_pc/
 /[Bb]uilds/
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
@@ -46,6 +50,8 @@ ExportedObj/
 *.mdb
 *.opendb
 *.VC.db
+*.blend1
+*.blend1.meta
 
 # Unity3D generated meta files
 *.pidb.meta
@@ -69,5 +75,3 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
-/Assets/Bakery/shader/Bakery_ShaderGraphHDRP.unitypackage.meta
-/Assets/Bakery/shader/Bakery_ShaderGraphLWRP.unitypackage.meta

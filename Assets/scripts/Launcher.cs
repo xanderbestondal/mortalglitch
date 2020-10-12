@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 using Photon.Realtime;
 using TMPro;
+using System.Collections.Generic;
 
 namespace Com.Oisoi.NahShop
 {
@@ -34,6 +35,11 @@ namespace Com.Oisoi.NahShop
 		[Tooltip("The UI Loader Anime")]
 		[SerializeField]
 		private GameObject loadingObj;
+
+
+		[SerializeField]
+		private GameObject roomNameField;
+		public string roomName = "";
 
 		#endregion
 
@@ -70,10 +76,26 @@ namespace Com.Oisoi.NahShop
 
 		}
 
+		private void Update()
+		{
+			if (Input.GetKey(KeyCode.LeftControl) && Input.GetKeyDown(KeyCode.R))
+			{
+				if (roomNameField.activeSelf)
+					roomNameField.SetActive(false);
+				else
+					roomNameField.SetActive(true);
+			}
+		}
+
 		#endregion
 
 
 		#region Public Methods
+		
+		public void setRoomName()
+		{
+			roomName = roomNameField.GetComponent<TMP_InputField>().text;
+		}
 
 		/// <summary>
 		/// Start the connection process. 
@@ -101,14 +123,22 @@ namespace Com.Oisoi.NahShop
 			// we check if we are connected or not, we join if we are , else we initiate the connection to the server.
 			if (PhotonNetwork.IsConnected)
 			{
+				print("Joining Room...");
 				LogFeedback("Joining Room...");
+				printRoomData();
 				// #Critical we need at this point to attempt joining a Random Room. If it fails, we'll get notified in OnJoinRandomFailed() and we'll create one.
-				PhotonNetwork.JoinRandomRoom();
+				//PhotonNetwork.RejoinRoom(null);
+				if (roomName == "")
+					PhotonNetwork.JoinRandomRoom();
+				else
+					PhotonNetwork.JoinRoom(roomName);
 			}
 			else
 			{
 
+				print("Connecting...");
 				LogFeedback("Connecting...");
+				printRoomData();
 
 				// #Critical, we must first and foremost connect to Photon Online Server.
 				PhotonNetwork.ConnectUsingSettings();
@@ -151,10 +181,15 @@ namespace Com.Oisoi.NahShop
 			if (isConnecting)
 			{
 				LogFeedback("OnConnectedToMaster: Next -> try to Join Random Room");
-				Debug.Log("PUN Basics Tutorial/Launcher: OnConnectedToMaster() was called by PUN. Now this client is connected and could join a room.\n Calling: PhotonNetwork.JoinRandomRoom(); Operation will fail if no room found");
+				Debug.Log("OnConnectedToMaster() was called by PUN. Now this client is connected and could join a room.\n Calling: PhotonNetwork.JoinRandomRoom(); Operation will fail if no room found");
+
+				printRoomData();
 
 				// #Critical: The first we try to do is to join a potential existing room. If there is, good, else, we'll be called back with OnJoinRandomFailed()
-				PhotonNetwork.JoinRandomRoom();
+				if (roomName == "")
+					PhotonNetwork.JoinRandomRoom();
+				else
+					PhotonNetwork.JoinRoom(roomName);
 			}
 		}
 
@@ -170,7 +205,16 @@ namespace Com.Oisoi.NahShop
 			Debug.Log("PUN Basics Tutorial/Launcher:OnJoinRandomFailed() was called by PUN. No random room available, so we create one.\nCalling: PhotonNetwork.CreateRoom");
 
 			// #Critical: we failed to join a random room, maybe none exists or they are all full. No worries, we create a new room.
-			PhotonNetwork.CreateRoom(null, new RoomOptions { MaxPlayers = this.maxPlayersPerRoom });
+			PhotonNetwork.CreateRoom(null, new RoomOptions { MaxPlayers = this.maxPlayersPerRoom, PlayerTtl = 60000, EmptyRoomTtl = 60000 });
+		}
+
+		public override void OnJoinRoomFailed(short returnCode, string message)
+		{
+			LogFeedback("<Color=Red>OnJoinRoomFailed</Color>: Next -> Create a new Room");
+			Debug.Log("PUN Basics Tutorial/Launcher:OnJoinRoomFailed() was called by PUN. No room available, so we create one.\nCalling: PhotonNetwork.CreateRoom");
+
+			// #Critical: we failed to join a random room, maybe none exists or they are all full. No worries, we create a new room.
+			PhotonNetwork.CreateRoom(roomName, new RoomOptions { MaxPlayers = this.maxPlayersPerRoom, PlayerTtl = 30000, EmptyRoomTtl = 30000 });
 		}
 
 
@@ -179,6 +223,7 @@ namespace Com.Oisoi.NahShop
 		/// </summary>
 		public override void OnDisconnected(DisconnectCause cause)
 		{
+			print(cause + " : disconnected in lobby");
 			LogFeedback("<Color=Red>OnDisconnected</Color> " + cause);
 			Debug.LogError("PUN Basics Tutorial/Launcher:Disconnected");
 
@@ -208,8 +253,12 @@ namespace Com.Oisoi.NahShop
 			LogFeedback("<Color=Green>OnJoinedRoom</Color> with " + PhotonNetwork.CurrentRoom.PlayerCount + " Player(s)");
 			Debug.Log("PUN Basics Tutorial/Launcher: OnJoinedRoom() called by PUN. Now this client is in a room.\nFrom here on, your game would be running.");
 
+
+			printRoomData();
+
 			// #Critical: We only load if we are the first player, else we rely on  PhotonNetwork.AutomaticallySyncScene to sync our instance scene.
-			if (PhotonNetwork.CurrentRoom.PlayerCount == 1)
+			//if (PhotonNetwork.CurrentRoom.PlayerCount == 1)
+			if(PhotonNetwork.LocalPlayer.IsMasterClient)
 			{
 				Debug.Log("We load the 'nahShop' ");
 
@@ -220,6 +269,32 @@ namespace Com.Oisoi.NahShop
 			}
 		}
 
+		void printRoomData()
+		{
+			print("---------------------");
+			if (PhotonNetwork.CurrentRoom != null)
+			{
+				print("player Count : " + PhotonNetwork.CurrentRoom.PlayerCount);
+				//PhotonNetwork.CurrentRoom.rem
+				//if (PhotonNetwork.CurrentRoom.PlayerCount > 1)
+				//{
+				//	print("local player : " + PhotonNetwork.LocalPlayer.UserId);
+				//}
+				foreach (KeyValuePair<int, Player> attachStat in PhotonNetwork.CurrentRoom.Players)
+				{
+					//Debug.Log(attachStat.Key);
+					if (attachStat.Value.IsMasterClient)
+						Debug.Log(attachStat.Value.NickName + "( MASTER )");
+					else
+						Debug.Log(attachStat.Value.NickName + "( not master )");
+					//if (PhotonNetwork.LocalPlayer.UserId == attachStat.Value.UserId)
+					//{
+					//	print("MATCH");
+					//	//PhotonNetwork.RejoinRoom(null);
+					//}
+				}
+			}
+		}
 		#endregion
 
 	}

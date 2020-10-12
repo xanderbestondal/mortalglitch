@@ -66,15 +66,15 @@ public class cameraMovement : MonoBehaviour
 
 		RaycastHit hit;
 		// Does the ray intersect any objects
-		if (Physics.Raycast(cameraTransform_rot.position, cameraTransform_rot.TransformDirection(Vector3.back), out hit, camDist))
+		if (Physics.Raycast(cameraTransform_target.parent.position, cameraTransform_target.parent.TransformDirection(Vector3.back), out hit, camDist))
 		{
-			Debug.DrawRay(cameraTransform_rot.position, cameraTransform_rot.TransformDirection(Vector3.back) * hit.distance, Color.yellow);
+			Debug.DrawRay(cameraTransform_target.parent.position, cameraTransform_target.parent.TransformDirection(Vector3.back) * hit.distance, Color.yellow);
 			cameraTransform.position = hit.point;
 		}
-		else
-		{
-			Debug.DrawRay(cameraTransform_rot.position, cameraTransform_rot.TransformDirection(Vector3.back) * 1000, Color.white);
-		}
+		//else
+		//{
+		//	Debug.DrawRay(cameraTransform_target.position, cameraTransform_target.TransformDirection(Vector3.back) * 1000, Color.white);
+		//}
 
 
 

@@ -24,14 +24,38 @@ namespace Com.Oisoi.NahShop
 
 		saveData SaveData;
 
+		public bool markedForDeletion;
+
 		void Start()
 		{
+			// if there are any duplicates left from rejoining, KILL THEM! (not sure how this happens tho)
+			if (photonView.IsMine)
+			{
+				foreach (PlayerManager p in FindObjectsOfType<PlayerManager>())
+				{
+					if (!p.markedForDeletion)
+					{
+						if (p != this)
+						{
+							if (p.GetComponent<PhotonView>().IsMine)
+							{
+								PhotonView.Get(this).RPC("deleteSelf", RpcTarget.All, p.GetComponent<PhotonView>().ViewID);
+								p.markedForDeletion = true;
+								print("MARKED CLONE");
+							}
+						}
+					}
+				}
+			}
+
 			cameraMovement _cameraWork = GetComponent<cameraMovement>();
 
 			if (photonView.IsMine)
 			{
 				_cameraWork.OnStartFollowing();
 			}
+
+
 			//else
 			//{
 				// if this player is not controlled locally, then let its name face to the camera
@@ -44,6 +68,13 @@ namespace Com.Oisoi.NahShop
 			//}
 
 
+		}
+
+		[PunRPC]
+		void deleteSelf(int id, PhotonMessageInfo info) // sent to all users including the sending one
+		{
+			print("DELETED CLONE");
+			Destroy(PhotonView.Find(id).gameObject);
 		}
 
 		/// <summary>
