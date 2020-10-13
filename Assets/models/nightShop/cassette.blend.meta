@@ -2,7 +2,10 @@ fileFormatVersion: 2
 guid: 0b5f781c70551014fb7ccf77bf0db8c6
 ModelImporter:
   serializedVersion: 19300
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      74: -5187248419258813496
+    second: Plane|PlaneAction
   externalObjects:
   - first:
       type: UnityEngine:Material

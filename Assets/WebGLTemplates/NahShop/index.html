@@ -3,60 +3,62 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | webvrtest</title>
+    <title>Unity WebGL Player | mortalglitch</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
     <script>
-      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/build.json", {onProgress: UnityProgress});
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/build_nahshop.json", {onProgress: UnityProgress});
     </script>
     <script type='text/javascript'>
-	/*
-	WebGLInject - Part of Simple Spectrum V2.1 by Sam Boyer.
-	*/
+  /*
+  WebGLInject - Part of Simple Spectrum V2.1 by Sam Boyer.
+  */
 
-	window.SimpleSpectrum = {};
+  window.SimpleSpectrum = {};
 
-	window.AudioContext = (function(){
-		var ACConsructor = window.AudioContext || window.webkitAudioContext; //keep a reference to the original function
-		
-		//console.log('AudioContext Constructor overriden');
-			
-		return function(){
-			var ac = new ACConsructor();
+  window.AudioContext = (function(){
+    var ACConsructor = window.AudioContext || window.webkitAudioContext; //keep a reference to the original function
+    
+    //console.log('AudioContext Constructor overriden');
+      
+    return function(){
+      var ac = new ACConsructor();
 
-			//console.log('AudioContext constructed');
-			
-			window.SimpleSpectrum.ac = ac;
+      //console.log('AudioContext constructed');
+      
+      window.SimpleSpectrum.ac = ac;
 
-			window.SimpleSpectrum.a = ac.createAnalyser();
-			window.SimpleSpectrum.a.smoothingTimeConstant = 0;
-				
-			window.SimpleSpectrum.fa = new Uint8Array(window.SimpleSpectrum.a.frequencyBinCount); //frequency array, size of frequencyBinCount
-				
-			window.SimpleSpectrum.la = new Uint8Array(window.SimpleSpectrum.a.fftSize); //loudness array, size of fftSize
-				
-			window.SimpleSpectrum.a.connect(ac.destination); //connect the AnalyserNode to the AudioContext's destination.
-				
-			ac.actualDestination = ac.destination; //keep a reference to the destination.
-				
-			Object.defineProperty(ac, 'destination', { //replace ac.destination with our AnalyserNode.
-				value: window.SimpleSpectrum.a,
-				writable: false
-			});		
-				
-			return ac; //send our modified AudioContext back to Unity.
-		}
-	})();
-	</script>
+      window.SimpleSpectrum.a = ac.createAnalyser();
+      window.SimpleSpectrum.a.smoothingTimeConstant = 0;
+        
+      window.SimpleSpectrum.fa = new Uint8Array(window.SimpleSpectrum.a.frequencyBinCount); //frequency array, size of frequencyBinCount
+        
+      window.SimpleSpectrum.la = new Uint8Array(window.SimpleSpectrum.a.fftSize); //loudness array, size of fftSize
+        
+      window.SimpleSpectrum.a.connect(ac.destination); //connect the AnalyserNode to the AudioContext's destination.
+        
+      ac.actualDestination = ac.destination; //keep a reference to the destination.
+        
+      Object.defineProperty(ac, 'destination', { //replace ac.destination with our AnalyserNode.
+        value: window.SimpleSpectrum.a,
+        writable: false
+      });   
+        
+      return ac; //send our modified AudioContext back to Unity.
+    }
+  })();
+  </script>
   </head>
-  <body style="margin: 0; overflow:hidden">
-    <!-- <div class="webgl-content"> -->
-      	<!-- <div id="unityContainer" style="width: 960px; height: 600px"></div> -->
-		<!-- <div id="NAHMGLOADSCREEN01.png"></div> -->
-		<div id="unityContainer"></div>
-		<!-- </div> -->
-	<!-- </div> -->
+  <body>
+    <div class="webgl-content">
+      <div id="unityContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <!-- <div class="webgl-logo"></div> -->
+        <!-- <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div> -->
+        <!-- <div class="title">mortalglitch</div> -->
+      </div>
+    </div>
   </body>
 </html>

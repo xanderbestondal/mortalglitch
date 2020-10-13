@@ -2132,10 +2132,10 @@ PrefabInstance:
       propertyPath: viewIdField
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 1310215888899962212, guid: 303903dc437a0bf48a273805416ccefc,
+    - target: {fileID: 2493433723820816677, guid: 303903dc437a0bf48a273805416ccefc,
         type: 3}
-      propertyPath: m_ApplyRootMotion
-      value: 0
+      propertyPath: viewIdField
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7543862194365356427, guid: 303903dc437a0bf48a273805416ccefc,
         type: 3}

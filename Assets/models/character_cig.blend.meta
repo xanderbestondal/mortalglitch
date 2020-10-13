@@ -36,6 +36,9 @@ ModelImporter:
   - first:
       74: 4639736067092989289
     second: Cylinder.001|CylinderAction.001
+  - first:
+      74: -8219801381219328364
+    second: Armature|casetteToFace
   externalObjects:
   - first:
       type: UnityEngine:Material

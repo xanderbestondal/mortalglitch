@@ -29,6 +29,8 @@ public class move : MonoBehaviourPun
 
 	cameraMovement camMove;
 
+	public bool enableCamRot = true;
+
 	#endregion
 
 	// Start is called before the first frame update
@@ -54,35 +56,37 @@ public class move : MonoBehaviourPun
 
 		// ROT
 		//Rigid.MoveRotation(Rigid.rotation * Quaternion.Euler(new Vector3(0, Input.GetAxis("Mouse X") * MouseSensitivity, 0)));
-		transform.Rotate(new Vector3(0, Input.GetAxis("Mouse X") * MouseSensitivity, 0) ) ;
-
-		camRot.Rotate(-Input.GetAxis("Mouse Y") * MouseSensitivity, 0, 0, Space.Self);
-
-		float SignedAngle = Vector3.SignedAngle(camRot.parent.up, camRot.TransformDirection(0, 1, 0), camRot.right);
-
-		// limit rot
-		if (SignedAngle < -80)
-			camRot.localEulerAngles = new Vector3(-80,0,0);
-		else if (SignedAngle > 80)
-			camRot.localEulerAngles = new Vector3(80, 0, 0);
-		
-		// consume
-		if (SignedAngle < -30)
+		if (enableCamRot)
 		{
-			if(itemGrabbed != null)
+			transform.Rotate(new Vector3(0, Input.GetAxis("Mouse X") * MouseSensitivity, 0));
+
+			camRot.Rotate(-Input.GetAxis("Mouse Y") * MouseSensitivity, 0, 0, Space.Self);
+
+			float SignedAngle = Vector3.SignedAngle(camRot.parent.up, camRot.TransformDirection(0, 1, 0), camRot.right);
+
+			// limit rot
+			if (SignedAngle < -80)
+				camRot.localEulerAngles = new Vector3(-80, 0, 0);
+			else if (SignedAngle > 80)
+				camRot.localEulerAngles = new Vector3(80, 0, 0);
+
+			// consume
+			if (SignedAngle < -30)
 			{
-				anim.SetBool("consume", true);
+				if (itemGrabbed != null)
+				{
+					anim.SetBool("consume", true);
+				}
+				else
+				{
+					anim.SetBool("consume", false);
+				}
 			}
 			else
 			{
 				anim.SetBool("consume", false);
 			}
 		}
-		else
-		{
-			anim.SetBool("consume", false);
-		}
-
 
 		// MOVE
 		Rigid.MovePosition(transform.position + (transform.forward * Input.GetAxis("Vertical") * MoveSpeed * Time.deltaTime) + (transform.right * Input.GetAxis("Horizontal") * MoveSpeed * Time.deltaTime));
@@ -151,6 +155,14 @@ public class move : MonoBehaviourPun
 					// GRAB !
 					grabParent();
 
+					if (itemGrabbed.GetComponent<GoToWebShop>() != null)
+					{
+						itemGrabbed.GetComponent<GoToWebShop>().enableCasetteMenu();
+						anim.SetBool("casetteToFace", true);
+						enableCamRot = false;
+					}
+
+
 					PhotonView photonView_grabbedItem = itemGrabbed.GetComponent<PhotonView>();
 					if (photonView_grabbedItem != null)
 					{
@@ -212,8 +224,16 @@ public class move : MonoBehaviourPun
 			itemGrabbed.GetComponent<Rigidbody>().isKinematic = false;
 			itemGrabbed.GetComponentInChildren<Collider>().isTrigger = false;
 			itemGrabbed.GetComponent<Rigidbody>().AddForce(camTarg.TransformDirection(Vector3.forward)*333);
-			if(itemGrabbed.GetComponent<PhotonView>() != null)
-				itemGrabbed.GetComponent<PhotonView>().Synchronization = ViewSynchronization.UnreliableOnChange; // stop syncing, its parented, for now
+
+			//if (itemGrabbed.GetComponent<PhotonView>() != null)
+			//	itemGrabbed.GetComponent<PhotonView>().Synchronization = ViewSynchronization.UnreliableOnChange; // stop syncing, its parented, for now
+
+			if (itemGrabbed.GetComponent<GoToWebShop>() != null)
+			{
+				itemGrabbed.GetComponent<GoToWebShop>().disableCasetteMenu();
+				anim.SetBool("casetteToFace", false);
+				enableCamRot = true;
+			}
 
 			anim.SetTrigger("throw");
 
