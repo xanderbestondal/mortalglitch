@@ -29,24 +29,24 @@ namespace Com.Oisoi.NahShop
 		void Start()
 		{
 			// if there are any duplicates left from rejoining, KILL THEM! (not sure how this happens tho)
-			if (photonView.IsMine)
-			{
-				foreach (PlayerManager p in FindObjectsOfType<PlayerManager>())
-				{
-					if (!p.markedForDeletion)
-					{
-						if (p != this)
-						{
-							if (p.GetComponent<PhotonView>().IsMine)
-							{
-								PhotonView.Get(this).RPC("deleteSelf", RpcTarget.All, p.GetComponent<PhotonView>().ViewID);
-								p.markedForDeletion = true;
-								print("MARKED CLONE");
-							}
-						}
-					}
-				}
-			}
+			//if (photonView.IsMine)
+			//{
+			//	foreach (PlayerManager p in FindObjectsOfType<PlayerManager>())
+			//	{
+			//		if (!p.markedForDeletion)
+			//		{
+			//			if (p != this)
+			//			{
+			//				if (p.GetComponent<PhotonView>().IsMine)
+			//				{
+			//					PhotonView.Get(this).RPC("deleteSelf", RpcTarget.All, p.GetComponent<PhotonView>().ViewID);
+			//					p.markedForDeletion = true;
+			//					print("MARKED CLONE");
+			//				}
+			//			}
+			//		}
+			//	}
+			//}
 
 			cameraMovement _cameraWork = GetComponent<cameraMovement>();
 

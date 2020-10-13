@@ -26,9 +26,9 @@ namespace Com.Oisoi.NahShop
 			//customCursorRect = FindObjectOfType<customCursor>().GetComponent<RectTransform>();
 
 			SaveData = GetComponent<saveData>();
+			
+			userName = PhotonNetwork.NickName;
 
-			PlayerManager pm = FindObjectOfType<PlayerManager>();
-			userName = pm.playerName.text;
 			//lInputField.Select();
 			//chatTextfield.ActivateInputField();
 

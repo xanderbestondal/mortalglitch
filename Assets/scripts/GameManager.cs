@@ -45,6 +45,7 @@ namespace Com.Oisoi.NahShop
 
 		private void Update()
 		{
+
 			if (Input.GetKey(KeyCode.LeftControl) && Input.GetKeyDown(KeyCode.Q))
 				LeaveRoom();
 		}
@@ -116,7 +117,7 @@ namespace Com.Oisoi.NahShop
 				Debug.LogFormat("OnPlayerEnteredRoom IsMasterClient {0}", PhotonNetwork.IsMasterClient); // called before OnPlayerLeftRoom
 
 
-				LoadArena();
+				//LoadArena(); // this is from the tutorial.. no need to reload level when player joins in our game
 			}
 		}
 
@@ -131,7 +132,7 @@ namespace Com.Oisoi.NahShop
 				Debug.LogFormat("OnPlayerLeftRoom IsMasterClient {0}", PhotonNetwork.IsMasterClient); // called before OnPlayerLeftRoom
 
 
-				//LoadArena();
+				//LoadArena();// this is from the tutorial.. no need to reload level when player leaves in our game
 			}
 		}
 

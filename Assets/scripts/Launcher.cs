@@ -78,7 +78,7 @@ namespace Com.Oisoi.NahShop
 
 		private void Update()
 		{
-			if (Input.GetKey(KeyCode.LeftControl) && Input.GetKeyDown(KeyCode.R))
+			if (Input.GetKey(KeyCode.LeftControl) && Input.GetKeyDown(KeyCode.A))
 			{
 				if (roomNameField.activeSelf)
 					roomNameField.SetActive(false);
