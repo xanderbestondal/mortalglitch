@@ -41,6 +41,9 @@ namespace Com.Oisoi.NahShop
 		private GameObject roomNameField;
 		public string roomName = "";
 
+
+		AudioSource ass;
+
 		#endregion
 
 		#region Private Fields
@@ -59,7 +62,10 @@ namespace Com.Oisoi.NahShop
 		#endregion
 
 		#region MonoBehaviour CallBacks
-
+		void Start()
+		{
+			ass = GetComponent<AudioSource>();
+		}
 		/// <summary>
 		/// MonoBehaviour method called on GameObject by Unity during early initialization phase.
 		/// </summary>
@@ -114,11 +120,12 @@ namespace Com.Oisoi.NahShop
 			controlPanel.SetActive(false);
 
 			// start the loader animation for visual effect.
-			if (loadingObj != null)
-			{
-				loadingObj.SetActive(true);
-				//PhotonNetwork.LoadLevel("nahShop"); // do this when playing single player ...
-			}
+			print("sdlkfjfdslkjfldsjflsdkjflkjjcjfdjjfjjfjfj");
+			loadingObj.SetActive(true);
+
+			ass.Play();
+			//PhotonNetwork.LoadLevel("nahShop"); // do this when playing single player ...
+
 
 			// we check if we are connected or not, we join if we are , else we initiate the connection to the server.
 			if (PhotonNetwork.IsConnected)

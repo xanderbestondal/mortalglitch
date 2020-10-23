@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+using Photon.Pun;
+
 using UnityEngine.AI;
 
-public class moveAgents : MonoBehaviour
+public class moveAgents : MonoBehaviourPun
 {
 
 
@@ -15,23 +17,34 @@ public class moveAgents : MonoBehaviour
 	{
 		agents = FindObjectsOfType<NavMeshAgent>();
 		origPos = transform.position;
-		
 	}
 
-	// Update is called once per frame
-	void Update()
-    {
-		
+
+	private void Update()
+	{
 		for (int i = 0; i < agents.Length; i++)
 		{
-			//if((transform.position - agents[i].transform.position).magnitude > 1) // if distance is bigger than this . set a new destination
 			agents[i].destination = transform.position;
 		}
 
+		if (PhotonNetwork.IsMasterClient)
+			UpdatePos();
+	}
 
-		if(Random.value < .003f)
+
+	private void UpdatePos()
+	{
+		if(Random.value < .13f*Time.deltaTime)
 		{
 			transform.position = origPos + new Vector3(Random.value * 20 - 10, 0, Random.value * 20 - 10);
+			PhotonView.Get(this).RPC("updateOnClients", RpcTarget.OthersBuffered, transform.position); // send objPhotonViewId and playerPhotonViewId
 		}
+	}
+
+
+	[PunRPC]
+	void updateOnClients(Vector3 pos, PhotonMessageInfo info)
+	{
+		transform.position = pos;
 	}
 }

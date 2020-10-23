@@ -64,9 +64,9 @@ namespace Com.Oisoi.NahShop
 				css.weight = 1;
 				css.sourceTransform = Camera.main.transform;
 				aim.AddSource(css);
-				aim.constraintActive = true;	
+				aim.constraintActive = true;
 			//}
-
+			
 
 		}
 
@@ -96,11 +96,15 @@ namespace Com.Oisoi.NahShop
 			{
 				playerName.text = photonView.Owner.NickName;
 
-				//SaveData = GetComponent<saveData>();
-				//if (SaveData != null)
-				//{
-				//	SaveData.username = photonView.Owner.NickName;
-				//}
+				SaveData = GetComponent<saveData>();
+				if (SaveData != null)
+				{
+					SaveData.username = photonView.Owner.NickName;
+					if (photonView.Owner.NickName == "")
+					{
+						SaveData.username = photonView.Owner.UserId;
+					}
+				}
 			}
 		}
 
@@ -111,11 +115,13 @@ namespace Com.Oisoi.NahShop
 		{
 
 			ProcessInputs();
-			
-			//if (SaveData != null)
-			//{
-			//	SaveData.updatePosRotMessage();
-			//}
+
+#if UNITY_WEBGL
+			if (SaveData != null)
+			{
+				SaveData.updatePosRotMessage();
+			}
+#endif
 		}
 
 		#endregion

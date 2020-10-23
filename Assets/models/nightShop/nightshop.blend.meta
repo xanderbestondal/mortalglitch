@@ -199,7 +199,7 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties:
-    - '#BAKERY{"meshName":["windowWood","windows","walls","lowerWall","floor"],"padding":[27,30,6,37,17],"unwrapper":[0,0,0,0,0]}'
+    - '#BAKERY{"meshName":["windowWood","windows","walls","lowerWall","floor","walls.001","hallway_backToShop","hallway"],"padding":[27,30,6,37,17,3,7,4],"unwrapper":[0,0,0,0,0,0,0,0]}'
     clipAnimations: []
     isReadable: 1
   meshes:

@@ -6,6 +6,17 @@ using System.Runtime.InteropServices;
 public class clickForWebsite : MonoBehaviour
 {
 
+	AudioSource ass;
+
+	private void Start()
+	{
+		ass = GetComponent<AudioSource>();
+	}
+	private void OnEnable()
+	{
+		StartCoroutine(playSoundDelayed());
+	}
+
 	[DllImport("__Internal")]
 	private static extern void openWindow(string url);
 
@@ -21,5 +32,13 @@ public class clickForWebsite : MonoBehaviour
 		//Application.OpenURL("https://nahstuff.bandcamp.com/");
 		OpenLinkJSPlugin();
 		gameObject.SetActive(false);
+		ass.Play();
+	}
+
+
+	private IEnumerator playSoundDelayed()
+	{
+		yield return new WaitForSeconds(0.5f);
+		ass.Play();
 	}
 }

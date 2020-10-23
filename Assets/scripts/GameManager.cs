@@ -22,6 +22,13 @@ namespace Com.Oisoi.NahShop
 
 		string currentRoom;
 
+		Vector3 posOnDisconnect;
+		Quaternion rotOnDisconnect;
+
+		public GameObject gameData;
+
+		public GameObject BLOCKSTUFF;
+
 		/// <summary>
 		/// Called when the local player left the room. We need to load the launcher scene.
 		/// </summary>
@@ -48,6 +55,19 @@ namespace Com.Oisoi.NahShop
 
 			if (Input.GetKey(KeyCode.LeftControl) && Input.GetKeyDown(KeyCode.Q))
 				LeaveRoom();
+
+			if (Input.GetKey(KeyCode.LeftShift) && Input.GetKey(KeyCode.Space) && Input.GetKeyDown(KeyCode.D))
+				if(gameData.activeSelf)
+					gameData.SetActive(false);
+				else
+					gameData.SetActive(true);
+
+
+			if (Input.GetKey(KeyCode.LeftShift) && Input.GetKey(KeyCode.Space) && Input.GetKeyDown(KeyCode.B))
+				if (BLOCKSTUFF.activeSelf)
+					BLOCKSTUFF.SetActive(false);
+				else
+					BLOCKSTUFF.SetActive(true);
 		}
 
 
@@ -80,7 +100,7 @@ namespace Com.Oisoi.NahShop
 				{
 					Debug.LogFormat("We are Instantiating LocalPlayer from {0}", SceneManagerHelper.ActiveSceneName);
 					// we're in a room. spawn a character for the local player. it gets synced by using PhotonNetwork.Instantiate
-					instantiatedPlayer = PhotonNetwork.Instantiate(this.playerPrefab.name, new Vector3(0f, 5f, 0f), Quaternion.identity, 0);
+					instantiatedPlayer = PhotonNetwork.Instantiate(this.playerPrefab.name, new Vector3(-3f, 0f, 0f), Quaternion.Euler(0,90,0), 0);
 				}
 				else
 				{
@@ -143,6 +163,12 @@ namespace Com.Oisoi.NahShop
 		{
 			print(cause + "TRYING TO REJOIN room:" + currentRoom);
 
+			if (PlayerManager.LocalPlayerInstance != null)
+			{
+				posOnDisconnect = PlayerManager.LocalPlayerInstance.transform.position;
+				rotOnDisconnect = PlayerManager.LocalPlayerInstance.transform.rotation;
+			}
+
 			StartCoroutine(MainReconnect());
 
 			print("END OF REJOIN");
@@ -176,9 +202,16 @@ namespace Com.Oisoi.NahShop
 			else
 			{
 				print("Successful reconnected and joined!");
-				print(PlayerManager.LocalPlayerInstance.name);
-				print(instantiatedPlayer.name);
-				PlayerManager.LocalPlayerInstance.transform.position = new Vector3(0, 0, 100);
+
+				//if (PlayerManager.LocalPlayerInstance == null)
+				//{
+				//	instantiatedPlayer = PhotonNetwork.Instantiate(this.playerPrefab.name, posOnDisconnect, rotOnDisconnect, 0);
+
+				//	print("RE-instantiated playerPrefab!");
+				//}
+				//print(PlayerManager.LocalPlayerInstance.name);
+				//print(instantiatedPlayer.name);
+				//PlayerManager.LocalPlayerInstance.transform.position = new Vector3(0, 0, 100);
 			}
 		}
 

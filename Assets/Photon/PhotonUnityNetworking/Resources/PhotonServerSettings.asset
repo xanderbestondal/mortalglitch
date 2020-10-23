@@ -40,6 +40,8 @@ MonoBehaviour:
   - RespawnSpaceship
   - unGrabOnAllClients
   - deleteSelf
+  - sendForceToOthers
+  - updateOnClients
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

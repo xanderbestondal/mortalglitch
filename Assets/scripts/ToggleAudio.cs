@@ -8,15 +8,15 @@ namespace Com.Oisoi.NahShop {
 	{
 		public AudioClip sideA;
 		public AudioClip sideB;
-		
+
+		bool isPaused;
+
 		AudioSource ass;
 
 		ChatTextManager chatTextManager;
 		// Start is called before the first frame update
 		void Start()
 		{
-
-
 			// dont play audio from other players
 			if (transform.parent.GetComponent<PhotonView>().IsMine == false)
 			{
@@ -37,18 +37,35 @@ namespace Com.Oisoi.NahShop {
 				if (!chatTextManager.chatTextfield.isFocused)
 				{
 					if (ass.isPlaying)
+					{
 						ass.Pause();
+						isPaused = true;
+					}
 					else
+					{
 						ass.Play();
+						isPaused = false;
+					}
 				}
 			}
 
 
-			//if (!audioSource.isPlaying)
-			//{
-			//	audioSource.clip = otherClip;
-			//	audioSource.Play();
-			//}
+			if (!ass.isPlaying && !isPaused)
+			{
+
+				if (ass.clip == sideA)
+				{
+					ass.clip = sideB;
+					print("endoOfTrack");
+				}else
+				{
+					ass.clip = sideA;
+					print("endoOfTrack _B");
+				}
+
+				ass.Play();
+			}
+
 		}
 	}
 }

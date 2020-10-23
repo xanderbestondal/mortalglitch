@@ -4,6 +4,7 @@ using UnityEngine;
 
 using TMPro;
 using UnityEngine.Networking;
+using System.Globalization;
 
 public class saveData : MonoBehaviour
 {
@@ -13,51 +14,57 @@ public class saveData : MonoBehaviour
 
 	string sendstring;
 	int timer;
-	
 
+	public Transform camRot;
+	public Transform campos;
 
-	// Start is called before the first frame update
-	void Start()
-    {
-		
+	string appUrl;
+
+	private void Start()
+	{
+		appUrl = Application.dataPath;
 		
 	}
 
-	// Update is called once per frame
-	void Update()
+	private void OnGUI()
 	{
+		GUI.Label(new Rect(0, 50, 100, 100), appUrl);
 	}
 
 	public void updatePosRotMessage()
 	{
 
-		sendstring += Time.time.ToString();
-		sendstring += transform.position.ToString();
-		sendstring += transform.position.ToString() + ";";
+		sendstring += Time.time.ToString() + ";";
+		//save player pos data
+		sendstring += transform.position.ToString("F2") + ";";
+		sendstring += transform.rotation.y.ToString() + ";";
+		//save cam data
+		sendstring += campos.localPosition.z.ToString() + ";";
+		sendstring += camRot.rotation.x.ToString() + "\n";
 		timer++;
 
 		if (timer == 100)
 		{ // every 100 frames: send string with new positions
-			StartCoroutine(Upload("posrotdata", sendstring));
+			StartCoroutine(Upload("posrotdata_" + username, sendstring));
 			sendstring = "";
 			timer = 0;
 		}
 
 	}
 
-	public void updateChatMessage(string s)
+	public void appendFileAndSend(string filename , string data)
 	{
-		StartCoroutine(Upload("chatMessages", s));
+		StartCoroutine(Upload(filename, data));
 	}
 
 
-	IEnumerator Upload(string dataType,  string data)
+	IEnumerator Upload(string filename,  string data)
 	{
 		WWWForm form = new WWWForm();
-		form.AddField("username", username + "_"  + dataType);
-		form.AddField("data", data);
+		form.AddField("filename", filename);
+		form.AddField("data", data + "\n");
 		
-		UnityWebRequest www = UnityWebRequest.Post("https://nahshop.oisoi.com/userdata/postText.php", form);
+		UnityWebRequest www = UnityWebRequest.Post(appUrl+"/userdata/postText.php", form);
 		yield return www.SendWebRequest();
 
 		if (www.isNetworkError || www.isHttpError)
@@ -69,4 +76,5 @@ public class saveData : MonoBehaviour
 			//Debug.Log("Form upload complete!");
 		}
 	}
+	
 }

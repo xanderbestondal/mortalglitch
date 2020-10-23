@@ -1522,3 +1522,516 @@ Symbol file LoadedFromMemory doesn't match image E:\unity\MortalGllitch\Library\
 Symbol file LoadedFromMemory doesn't match image E:\unity\MortalGllitch\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
 Symbol file LoadedFromMemory doesn't match image E:\unity\MortalGllitch\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
 Symbol file LoadedFromMemory doesn't match image E:\unity\MortalGllitch\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
+Symbol file LoadedFromMemory doesn't match image E:\unity\MortalGllitch\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
+2020-10-19
+Rendering UV GBuffer for nahShop_LM0 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for nahShop_LMA1 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for probes 256
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Done
+Done
+Running ftrace fixpos12 "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "uvpos_nahShop_LM0.lz4" 2 0 0 0
+Running ftrace fixpos12 "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "uvpos_nahShop_LMA1.lz4" 2 0 1 0
+Running ftrace arealightprobesh "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-1067815980_2" 1924 0 2 lights0.bin
+Running ftrace arealightprobesh "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-2130995787_2" 1924 0 2 lights1.bin
+Running ftrace arealightprobesh "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-381994480_2" 1924 0 2 lights2.bin
+Running ftrace batchpointlightprobesh "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "PointBatch_2_0_4" 1924 0 2 batchpointlight_2_0_4.bin
+Running ftrace skyprobesh "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-2065230161_2" 1924 0 2 sky0.bin
+Running ftrace addmul "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "probes" 4 0 2 comp_2.bin
+Running ftrace arealight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-1067815980_0" 4 0 0 lights0.bin
+Running ftrace arealight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-2130995787_0" 4 0 0 lights1.bin
+Running ftrace arealight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-381994480_0" 4 0 0 lights2.bin
+Running ftrace batchpointlight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "PointBatch_0_0_4" 4 0 0 batchpointlight_0_0_4.bin
+Running ftrace sky "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-2065230161_0" 4 0 0 sky0.bin
+Running ftrace addmul "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LM0" 4 0 0 comp_0.bin
+Running ftrace arealight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-1067815980_1" 4 0 1 lights0.bin
+Running ftrace arealight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-2130995787_1" 4 0 1 lights1.bin
+Running ftrace arealight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-381994480_1" 4 0 1 lights2.bin
+Running ftrace batchpointlight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "PointBatch_1_0_4" 4 0 1 batchpointlight_1_0_4.bin
+Running ftrace sky "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-2065230161_1" 4 0 1 sky0.bin
+Running ftrace addmul "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LMA1" 4 0 1 comp_1.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LM0_diffuse" 4 16 0 "gi_nahShop_LM00.bin" "nahShop_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LMA1_diffuse" 4 16 1 "gi_nahShop_LMA10.bin" "nahShop_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LM0_diffuse" 4 16 0 "gi_nahShop_LM01.bin" "nahShop_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LMA1_diffuse" 4 16 1 "gi_nahShop_LMA11.bin" "nahShop_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LM0_diffuse" 4 16 0 "gi_nahShop_LM02.bin" "nahShop_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LMA1_diffuse" 4 16 1 "gi_nahShop_LMA12.bin" "nahShop_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LM0_diffuse" 4 16 0 "gi_nahShop_LM03.bin" "nahShop_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LMA1_diffuse" 4 16 1 "gi_nahShop_LMA13.bin" "nahShop_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgiprobesh "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "probes_final" 1924 16 2 "gi_probes4.bin" "probes_lights_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LM0_final" 4 16 0 "gi_nahShop_LM04.bin" "nahShop_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LMA1_final" 4 16 1 "gi_nahShop_LMA14.bin" "nahShop_LMA1_lights_HDR.lz4" vbTraceTex.bin
+Running ftrace addsh "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "probes_final_" 4 0 2 shcomp_2.bin
+Running denoiser "C:\Users\Oisoi_02\AppData\Local\Temp\frender/nahShop_LM0_final_HDR.lz4" "C:\Users\Oisoi_02\AppData\Local\Temp\frender/nahShop_LM0_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "0" "nahShop_LM0_final_HDR.lz4"
+Running denoiser "C:\Users\Oisoi_02\AppData\Local\Temp\frender/nahShop_LMA1_final_HDR.lz4" "C:\Users\Oisoi_02\AppData\Local\Temp\frender/nahShop_LMA1_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "1" "nahShop_LMA1_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\Oisoi_02\AppData\Local\Temp\frender/nahShop_LM0_final_HDR.lz4" "E:/unity/MortalGllitch/Assets/BakeryLightmaps/nahShop_LM0_final.hdr"
+Running halffloat2hdr "C:\Users\Oisoi_02\AppData\Local\Temp\frender/nahShop_LMA1_final_HDR.lz4" "E:/unity/MortalGllitch/Assets/BakeryLightmaps/nahShop_LMA1_final.hdr"
+Symbol file LoadedFromMemory doesn't match image E:\unity\MortalGllitch\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
+Symbol file LoadedFromMemory doesn't match image E:\unity\MortalGllitch\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
+Done
+Done
+Done
+Done
+2020-10-23
+Rendering UV GBuffer for nahShop_LM0 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for nahShop_LMA1 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for probes 256
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Done
+Done
+Running ftrace fixpos12 "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "uvpos_nahShop_LM0.lz4" 2 0 0 0
+Running ftrace fixpos12 "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "uvpos_nahShop_LMA1.lz4" 2 0 1 0
+Running ftrace arealightprobesh "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-668090585_2" 1924 0 2 lights0.bin
+Running ftrace arealightprobesh "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_327690459_2" 1924 0 2 lights1.bin
+Running ftrace arealightprobesh "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_1533845471_2" 1924 0 2 lights2.bin
+Running ftrace batchpointlightprobesh "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "PointBatch_2_0_2" 1924 0 2 batchpointlight_2_0_2.bin
+Running ftrace skyprobesh "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-2065230161_2" 1924 0 2 sky0.bin
+Running ftrace addmul "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "probes" 4 0 2 comp_2.bin
+Running ftrace arealight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-668090585_0" 4 0 0 lights0.bin
+Running ftrace arealight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_327690459_0" 4 0 0 lights1.bin
+Running ftrace arealight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_1533845471_0" 4 0 0 lights2.bin
+Running ftrace batchpointlight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "PointBatch_0_0_2" 4 0 0 batchpointlight_0_0_2.bin
+Running ftrace sky "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-2065230161_0" 4 0 0 sky0.bin
+Running ftrace addmul "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LM0" 4 0 0 comp_0.bin
+Running ftrace arealight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-668090585_1" 4 0 1 lights0.bin
+Running ftrace arealight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_327690459_1" 4 0 1 lights1.bin
+Running ftrace arealight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_1533845471_1" 4 0 1 lights2.bin
+Running ftrace batchpointlight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "PointBatch_1_0_2" 4 0 1 batchpointlight_1_0_2.bin
+Running ftrace sky "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-2065230161_1" 4 0 1 sky0.bin
+Running ftrace addmul "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LMA1" 4 0 1 comp_1.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LM0_diffuse" 4 16 0 "gi_nahShop_LM00.bin" "nahShop_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LMA1_diffuse" 4 16 1 "gi_nahShop_LMA10.bin" "nahShop_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LM0_diffuse" 4 16 0 "gi_nahShop_LM01.bin" "nahShop_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LMA1_diffuse" 4 16 1 "gi_nahShop_LMA11.bin" "nahShop_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LM0_diffuse" 4 16 0 "gi_nahShop_LM02.bin" "nahShop_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LMA1_diffuse" 4 16 1 "gi_nahShop_LMA12.bin" "nahShop_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LM0_diffuse" 4 16 0 "gi_nahShop_LM03.bin" "nahShop_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LMA1_diffuse" 4 16 1 "gi_nahShop_LMA13.bin" "nahShop_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgiprobesh "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "probes_final" 1924 16 2 "gi_probes4.bin" "probes_lights_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LM0_final" 4 16 0 "gi_nahShop_LM04.bin" "nahShop_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LMA1_final" 4 16 1 "gi_nahShop_LMA14.bin" "nahShop_LMA1_lights_HDR.lz4" vbTraceTex.bin
+Running ftrace addsh "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "probes_final_" 4 0 2 shcomp_2.bin
+Running denoiser "C:\Users\Oisoi_02\AppData\Local\Temp\frender/nahShop_LM0_final_HDR.lz4" "C:\Users\Oisoi_02\AppData\Local\Temp\frender/nahShop_LM0_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "0" "nahShop_LM0_final_HDR.lz4"
+Running denoiser "C:\Users\Oisoi_02\AppData\Local\Temp\frender/nahShop_LMA1_final_HDR.lz4" "C:\Users\Oisoi_02\AppData\Local\Temp\frender/nahShop_LMA1_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "1" "nahShop_LMA1_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\Oisoi_02\AppData\Local\Temp\frender/nahShop_LM0_final_HDR.lz4" "E:/unity/MortalGllitch/Assets/BakeryLightmaps/nahShop_LM0_final.hdr"
+Running halffloat2hdr "C:\Users\Oisoi_02\AppData\Local\Temp\frender/nahShop_LMA1_final_HDR.lz4" "E:/unity/MortalGllitch/Assets/BakeryLightmaps/nahShop_LMA1_final.hdr"
+Done
+Done
+Done
+Done
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Num alphas of 512x512: 1
+Done
+Rendering UV GBuffer for nahShop_LM0 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for nahShop_LMA1 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for probes 256
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Done
+Done
+Running ftrace fixpos12 "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "uvpos_nahShop_LM0.lz4" 2 0 0 0
+Running ftrace fixpos12 "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "uvpos_nahShop_LMA1.lz4" 2 0 1 0
+Running ftrace arealightprobesh "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_1794985576_2" 1924 0 2 lights0.bin
+Running ftrace arealightprobesh "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-1922536421_2" 1924 0 2 lights1.bin
+Running ftrace arealightprobesh "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-1374059262_2" 1924 0 2 lights2.bin
+Running ftrace batchpointlightprobesh "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "PointBatch_2_0_2" 1924 0 2 batchpointlight_2_0_2.bin
+Running ftrace skyprobesh "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-2065230161_2" 1924 0 2 sky0.bin
+Running ftrace addmul "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "probes" 4 0 2 comp_2.bin
+Running ftrace arealight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_1794985576_0" 4 0 0 lights0.bin
+Running ftrace arealight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-1922536421_0" 4 0 0 lights1.bin
+Running ftrace arealight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-1374059262_0" 4 0 0 lights2.bin
+Running ftrace batchpointlight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "PointBatch_0_0_2" 4 0 0 batchpointlight_0_0_2.bin
+Running ftrace sky "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-2065230161_0" 4 0 0 sky0.bin
+Running ftrace addmul "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LM0" 4 0 0 comp_0.bin
+Running ftrace arealight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_1794985576_1" 4 0 1 lights0.bin
+Running ftrace arealight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-1922536421_1" 4 0 1 lights1.bin
+Running ftrace arealight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-1374059262_1" 4 0 1 lights2.bin
+Running ftrace batchpointlight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "PointBatch_1_0_2" 4 0 1 batchpointlight_1_0_2.bin
+Running ftrace sky "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-2065230161_1" 4 0 1 sky0.bin
+Running ftrace addmul "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LMA1" 4 0 1 comp_1.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LM0_diffuse" 4 16 0 "gi_nahShop_LM00.bin" "nahShop_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LMA1_diffuse" 4 16 1 "gi_nahShop_LMA10.bin" "nahShop_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LM0_diffuse" 4 16 0 "gi_nahShop_LM01.bin" "nahShop_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LMA1_diffuse" 4 16 1 "gi_nahShop_LMA11.bin" "nahShop_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LM0_diffuse" 4 16 0 "gi_nahShop_LM02.bin" "nahShop_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LMA1_diffuse" 4 16 1 "gi_nahShop_LMA12.bin" "nahShop_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LM0_diffuse" 4 16 0 "gi_nahShop_LM03.bin" "nahShop_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LMA1_diffuse" 4 16 1 "gi_nahShop_LMA13.bin" "nahShop_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgiprobesh "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "probes_final" 1924 16 2 "gi_probes4.bin" "probes_lights_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LM0_final" 4 16 0 "gi_nahShop_LM04.bin" "nahShop_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LMA1_final" 4 16 1 "gi_nahShop_LMA14.bin" "nahShop_LMA1_lights_HDR.lz4" vbTraceTex.bin
+Running ftrace addsh "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "probes_final_" 4 0 2 shcomp_2.bin
+Running denoiser "C:\Users\Oisoi_02\AppData\Local\Temp\frender/nahShop_LM0_final_HDR.lz4" "C:\Users\Oisoi_02\AppData\Local\Temp\frender/nahShop_LM0_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "0" "nahShop_LM0_final_HDR.lz4"
+Running denoiser "C:\Users\Oisoi_02\AppData\Local\Temp\frender/nahShop_LMA1_final_HDR.lz4" "C:\Users\Oisoi_02\AppData\Local\Temp\frender/nahShop_LMA1_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "1" "nahShop_LMA1_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\Oisoi_02\AppData\Local\Temp\frender/nahShop_LM0_final_HDR.lz4" "E:/unity/MortalGllitch/Assets/BakeryLightmaps/nahShop_LM0_final.hdr"
+Running halffloat2hdr "C:\Users\Oisoi_02\AppData\Local\Temp\frender/nahShop_LMA1_final_HDR.lz4" "E:/unity/MortalGllitch/Assets/BakeryLightmaps/nahShop_LMA1_final.hdr"
+Done
+Done
+Done
+Done
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Num alphas of 512x512: 1
+Done
+Rendering UV GBuffer for nahShop_LM0 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for nahShop_LMA1 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for probes 256
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Done
+Done
+Running ftrace fixpos12 "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "uvpos_nahShop_LM0.lz4" 2 0 0 0
+Running ftrace fixpos12 "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "uvpos_nahShop_LMA1.lz4" 2 0 1 0
+Running ftrace arealightprobesh "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-1927953304_2" 1924 0 2 lights0.bin
+Running ftrace arealightprobesh "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-2072122870_2" 1924 0 2 lights1.bin
+Running ftrace arealightprobesh "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_343192195_2" 1924 0 2 lights2.bin
+Running ftrace batchpointlightprobesh "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "PointBatch_2_0_3" 1924 0 2 batchpointlight_2_0_3.bin
+Running ftrace skyprobesh "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-2065230161_2" 1924 0 2 sky0.bin
+Running ftrace addmul "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "probes" 4 0 2 comp_2.bin
+Running ftrace arealight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-1927953304_0" 4 0 0 lights0.bin
+Running ftrace arealight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-2072122870_0" 4 0 0 lights1.bin
+Running ftrace arealight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_343192195_0" 4 0 0 lights2.bin
+Running ftrace batchpointlight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "PointBatch_0_0_3" 4 0 0 batchpointlight_0_0_3.bin
+Running ftrace sky "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-2065230161_0" 4 0 0 sky0.bin
+Running ftrace addmul "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LM0" 4 0 0 comp_0.bin
+Running ftrace arealight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-1927953304_1" 4 0 1 lights0.bin
+Running ftrace arealight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-2072122870_1" 4 0 1 lights1.bin
+Running ftrace arealight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_343192195_1" 4 0 1 lights2.bin
+Running ftrace batchpointlight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "PointBatch_1_0_3" 4 0 1 batchpointlight_1_0_3.bin
+Running ftrace sky "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-2065230161_1" 4 0 1 sky0.bin
+Running ftrace addmul "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LMA1" 4 0 1 comp_1.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LM0_diffuse" 4 16 0 "gi_nahShop_LM00.bin" "nahShop_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LMA1_diffuse" 4 16 1 "gi_nahShop_LMA10.bin" "nahShop_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LM0_diffuse" 4 16 0 "gi_nahShop_LM01.bin" "nahShop_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LMA1_diffuse" 4 16 1 "gi_nahShop_LMA11.bin" "nahShop_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LM0_diffuse" 4 16 0 "gi_nahShop_LM02.bin" "nahShop_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LMA1_diffuse" 4 16 1 "gi_nahShop_LMA12.bin" "nahShop_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LM0_diffuse" 4 16 0 "gi_nahShop_LM03.bin" "nahShop_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LMA1_diffuse" 4 16 1 "gi_nahShop_LMA13.bin" "nahShop_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgiprobesh "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "probes_final" 1924 16 2 "gi_probes4.bin" "probes_lights_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LM0_final" 4 16 0 "gi_nahShop_LM04.bin" "nahShop_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LMA1_final" 4 16 1 "gi_nahShop_LMA14.bin" "nahShop_LMA1_lights_HDR.lz4" vbTraceTex.bin
+Running ftrace addsh "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "probes_final_" 4 0 2 shcomp_2.bin
+Running denoiser "C:\Users\Oisoi_02\AppData\Local\Temp\frender/nahShop_LM0_final_HDR.lz4" "C:\Users\Oisoi_02\AppData\Local\Temp\frender/nahShop_LM0_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "0" "nahShop_LM0_final_HDR.lz4"
+Running denoiser "C:\Users\Oisoi_02\AppData\Local\Temp\frender/nahShop_LMA1_final_HDR.lz4" "C:\Users\Oisoi_02\AppData\Local\Temp\frender/nahShop_LMA1_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "1" "nahShop_LMA1_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\Oisoi_02\AppData\Local\Temp\frender/nahShop_LM0_final_HDR.lz4" "E:/unity/MortalGllitch/Assets/BakeryLightmaps/nahShop_LM0_final.hdr"
+Running halffloat2hdr "C:\Users\Oisoi_02\AppData\Local\Temp\frender/nahShop_LMA1_final_HDR.lz4" "E:/unity/MortalGllitch/Assets/BakeryLightmaps/nahShop_LMA1_final.hdr"
+Done
+Done
+Done
+Done
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Num alphas of 512x512: 1
+Done
+Rendering UV GBuffer for nahShop_LM0 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for nahShop_LMA1 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for probes 256
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Done
+Done
+Running ftrace fixpos12 "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "uvpos_nahShop_LM0.lz4" 2 0 0 0
+Running ftrace fixpos12 "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "uvpos_nahShop_LMA1.lz4" 2 0 1 0
+Running ftrace arealightprobesh "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-1732713744_2" 1924 0 2 lights0.bin
+Running ftrace arealightprobesh "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_1734461461_2" 1924 0 2 lights1.bin
+Running ftrace arealightprobesh "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-1848002089_2" 1924 0 2 lights2.bin
+Running ftrace batchpointlightprobesh "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "PointBatch_2_0_3" 1924 0 2 batchpointlight_2_0_3.bin
+Running ftrace skyprobesh "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-2065230161_2" 1924 0 2 sky0.bin
+Running ftrace addmul "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "probes" 4 0 2 comp_2.bin
+Running ftrace arealight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-1732713744_0" 4 0 0 lights0.bin
+Running ftrace arealight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_1734461461_0" 4 0 0 lights1.bin
+Running ftrace arealight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-1848002089_0" 4 0 0 lights2.bin
+Running ftrace batchpointlight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "PointBatch_0_0_3" 4 0 0 batchpointlight_0_0_3.bin
+Running ftrace sky "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-2065230161_0" 4 0 0 sky0.bin
+Running ftrace addmul "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LM0" 4 0 0 comp_0.bin
+Running ftrace arealight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-1732713744_1" 4 0 1 lights0.bin
+Running ftrace arealight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_1734461461_1" 4 0 1 lights1.bin
+Running ftrace arealight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-1848002089_1" 4 0 1 lights2.bin
+Running ftrace batchpointlight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "PointBatch_1_0_3" 4 0 1 batchpointlight_1_0_3.bin
+Running ftrace sky "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-2065230161_1" 4 0 1 sky0.bin
+Running ftrace addmul "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LMA1" 4 0 1 comp_1.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LM0_diffuse" 4 16 0 "gi_nahShop_LM00.bin" "nahShop_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LMA1_diffuse" 4 16 1 "gi_nahShop_LMA10.bin" "nahShop_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LM0_diffuse" 4 16 0 "gi_nahShop_LM01.bin" "nahShop_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LMA1_diffuse" 4 16 1 "gi_nahShop_LMA11.bin" "nahShop_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LM0_diffuse" 4 16 0 "gi_nahShop_LM02.bin" "nahShop_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LMA1_diffuse" 4 16 1 "gi_nahShop_LMA12.bin" "nahShop_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LM0_diffuse" 4 16 0 "gi_nahShop_LM03.bin" "nahShop_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LMA1_diffuse" 4 16 1 "gi_nahShop_LMA13.bin" "nahShop_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgiprobesh "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "probes_final" 1924 16 2 "gi_probes4.bin" "probes_lights_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LM0_final" 4 16 0 "gi_nahShop_LM04.bin" "nahShop_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LMA1_final" 4 16 1 "gi_nahShop_LMA14.bin" "nahShop_LMA1_lights_HDR.lz4" vbTraceTex.bin
+Running ftrace addsh "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "probes_final_" 4 0 2 shcomp_2.bin
+Running denoiser "C:\Users\Oisoi_02\AppData\Local\Temp\frender/nahShop_LM0_final_HDR.lz4" "C:\Users\Oisoi_02\AppData\Local\Temp\frender/nahShop_LM0_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "0" "nahShop_LM0_final_HDR.lz4"
+Running denoiser "C:\Users\Oisoi_02\AppData\Local\Temp\frender/nahShop_LMA1_final_HDR.lz4" "C:\Users\Oisoi_02\AppData\Local\Temp\frender/nahShop_LMA1_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "1" "nahShop_LMA1_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\Oisoi_02\AppData\Local\Temp\frender/nahShop_LM0_final_HDR.lz4" "E:/unity/MortalGllitch/Assets/BakeryLightmaps/nahShop_LM0_final.hdr"
+Running halffloat2hdr "C:\Users\Oisoi_02\AppData\Local\Temp\frender/nahShop_LMA1_final_HDR.lz4" "E:/unity/MortalGllitch/Assets/BakeryLightmaps/nahShop_LMA1_final.hdr"
+Done
+Done
+Done
+Done
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Num alphas of 512x512: 1
+Done
+Rendering UV GBuffer for nahShop_LM0 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for nahShop_LMA1 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for probes 256
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Done
+Done
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Num alphas of 512x512: 1
+Done
+Rendering UV GBuffer for nahShop_LM0 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for nahShop_LMA1 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for probes 256
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Done
+Done
+Running ftrace fixpos12 "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "uvpos_nahShop_LM0.lz4" 2 0 0 0
+Running ftrace fixpos12 "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "uvpos_nahShop_LMA1.lz4" 2 0 1 0
+Running ftrace arealightprobesh "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-1577697384_2" 1924 0 2 lights0.bin
+Running ftrace arealightprobesh "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_1163614661_2" 1924 0 2 lights1.bin
+Running ftrace arealightprobesh "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_46681274_2" 1924 0 2 lights2.bin
+Running ftrace batchpointlightprobesh "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "PointBatch_2_0_8" 1924 0 2 batchpointlight_2_0_8.bin
+Running ftrace skyprobesh "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-2065230161_2" 1924 0 2 sky0.bin
+Running ftrace addmul "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "probes" 4 0 2 comp_2.bin
+Running ftrace arealight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-1577697384_0" 4 0 0 lights0.bin
+Running ftrace arealight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_1163614661_0" 4 0 0 lights1.bin
+Running ftrace arealight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_46681274_0" 4 0 0 lights2.bin
+Running ftrace batchpointlight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "PointBatch_0_0_8" 4 0 0 batchpointlight_0_0_8.bin
+Running ftrace sky "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-2065230161_0" 4 0 0 sky0.bin
+Running ftrace addmul "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LM0" 4 0 0 comp_0.bin
+Running ftrace arealight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-1577697384_1" 4 0 1 lights0.bin
+Running ftrace arealight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_1163614661_1" 4 0 1 lights1.bin
+Running ftrace arealight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_46681274_1" 4 0 1 lights2.bin
+Running ftrace batchpointlight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "PointBatch_1_0_8" 4 0 1 batchpointlight_1_0_8.bin
+Running ftrace sky "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-2065230161_1" 4 0 1 sky0.bin
+Running ftrace addmul "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LMA1" 4 0 1 comp_1.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LM0_diffuse" 4 16 0 "gi_nahShop_LM00.bin" "nahShop_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LMA1_diffuse" 4 16 1 "gi_nahShop_LMA10.bin" "nahShop_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LM0_diffuse" 4 16 0 "gi_nahShop_LM01.bin" "nahShop_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LMA1_diffuse" 4 16 1 "gi_nahShop_LMA11.bin" "nahShop_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LM0_diffuse" 4 16 0 "gi_nahShop_LM02.bin" "nahShop_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LMA1_diffuse" 4 16 1 "gi_nahShop_LMA12.bin" "nahShop_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LM0_diffuse" 4 16 0 "gi_nahShop_LM03.bin" "nahShop_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LMA1_diffuse" 4 16 1 "gi_nahShop_LMA13.bin" "nahShop_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgiprobesh "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "probes_final" 1924 16 2 "gi_probes4.bin" "probes_lights_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LM0_final" 4 16 0 "gi_nahShop_LM04.bin" "nahShop_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LMA1_final" 4 16 1 "gi_nahShop_LMA14.bin" "nahShop_LMA1_lights_HDR.lz4" vbTraceTex.bin
+Running ftrace addsh "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "probes_final_" 4 0 2 shcomp_2.bin
+Running denoiser "C:\Users\Oisoi_02\AppData\Local\Temp\frender/nahShop_LM0_final_HDR.lz4" "C:\Users\Oisoi_02\AppData\Local\Temp\frender/nahShop_LM0_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "0" "nahShop_LM0_final_HDR.lz4"
+Running denoiser "C:\Users\Oisoi_02\AppData\Local\Temp\frender/nahShop_LMA1_final_HDR.lz4" "C:\Users\Oisoi_02\AppData\Local\Temp\frender/nahShop_LMA1_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "1" "nahShop_LMA1_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\Oisoi_02\AppData\Local\Temp\frender/nahShop_LM0_final_HDR.lz4" "E:/unity/MortalGllitch/Assets/BakeryLightmaps/nahShop_LM0_final.hdr"
+Running halffloat2hdr "C:\Users\Oisoi_02\AppData\Local\Temp\frender/nahShop_LMA1_final_HDR.lz4" "E:/unity/MortalGllitch/Assets/BakeryLightmaps/nahShop_LMA1_final.hdr"
+Symbol file LoadedFromMemory doesn't match image E:\unity\MortalGllitch\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
+Symbol file LoadedFromMemory doesn't match image E:\unity\MortalGllitch\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
+Symbol file LoadedFromMemory doesn't match image E:\unity\MortalGllitch\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
+Symbol file LoadedFromMemory doesn't match image E:\unity\MortalGllitch\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
+Symbol file LoadedFromMemory doesn't match image E:\unity\MortalGllitch\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
+Symbol file LoadedFromMemory doesn't match image E:\unity\MortalGllitch\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
+Symbol file LoadedFromMemory doesn't match image E:\unity\MortalGllitch\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
+Symbol file LoadedFromMemory doesn't match image E:\unity\MortalGllitch\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
+Symbol file LoadedFromMemory doesn't match image E:\unity\MortalGllitch\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
+Symbol file LoadedFromMemory doesn't match image E:\unity\MortalGllitch\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
+Symbol file LoadedFromMemory doesn't match image E:\unity\MortalGllitch\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
+Symbol file LoadedFromMemory doesn't match image E:\unity\MortalGllitch\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
+Symbol file LoadedFromMemory doesn't match image E:\unity\MortalGllitch\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
+Symbol file LoadedFromMemory doesn't match image E:\unity\MortalGllitch\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
+Symbol file LoadedFromMemory doesn't match image E:\unity\MortalGllitch\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
+Symbol file LoadedFromMemory doesn't match image E:\unity\MortalGllitch\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
+Symbol file LoadedFromMemory doesn't match image E:\unity\MortalGllitch\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
+Done
+Done
+Done
+Done
+Loaded vertex shader: quad.vso
+Loaded pixel shader: skyOutput.pso
+Loaded pixel shader: cookieOutput.pso
+initShaders done
+initScene done
+Num alphas of 512x512: 1
+Done
+Rendering UV GBuffer for nahShop_LM0 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for nahShop_LMA1 51
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Rendering UV normal...
+Rendering faceted UV normal...
+Rendering UV pos...
+Rendering smooth UV pos...
+Rendering UV GBuffer for probes 256
+RGBA32F...RGBA8...RGBA8_SRGB...RGBA16F...states...
+Done
+Done
+Running ftrace fixpos12 "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "uvpos_nahShop_LMA1.lz4" 2 0 1 0
+Running ftrace fixpos12 "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "uvpos_nahShop_LM0.lz4" 2 0 0 0
+Running ftrace arealightprobesh "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-774560361_2" 1924 0 2 lights0.bin
+Running ftrace arealightprobesh "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_1595899876_2" 1924 0 2 lights1.bin
+Running ftrace arealightprobesh "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_960630740_2" 1924 0 2 lights2.bin
+Running ftrace batchpointlightprobesh "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "PointBatch_2_0_8" 1924 0 2 batchpointlight_2_0_8.bin
+Running ftrace skyprobesh "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-2065230161_2" 1924 0 2 sky0.bin
+Running ftrace addmul "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "probes" 4 0 2 comp_2.bin
+Running ftrace arealight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-774560361_1" 4 0 1 lights0.bin
+Running ftrace arealight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_1595899876_1" 4 0 1 lights1.bin
+Running ftrace arealight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_960630740_1" 4 0 1 lights2.bin
+Running ftrace batchpointlight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "PointBatch_1_0_8" 4 0 1 batchpointlight_1_0_8.bin
+Running ftrace sky "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-2065230161_1" 4 0 1 sky0.bin
+Running ftrace addmul "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LMA1" 4 0 1 comp_1.bin
+Running ftrace arealight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-774560361_0" 4 0 0 lights0.bin
+Running ftrace arealight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_1595899876_0" 4 0 0 lights1.bin
+Running ftrace arealight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_960630740_0" 4 0 0 lights2.bin
+Running ftrace batchpointlight "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "PointBatch_0_0_8" 4 0 0 batchpointlight_0_0_8.bin
+Running ftrace sky "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "light_-2065230161_0" 4 0 0 sky0.bin
+Running ftrace addmul "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LM0" 4 0 0 comp_0.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LMA1_diffuse" 4 16 1 "gi_nahShop_LMA10.bin" "nahShop_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LM0_diffuse" 4 16 0 "gi_nahShop_LM00.bin" "nahShop_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LMA1_diffuse" 4 16 1 "gi_nahShop_LMA11.bin" "nahShop_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LM0_diffuse" 4 16 0 "gi_nahShop_LM01.bin" "nahShop_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LMA1_diffuse" 4 16 1 "gi_nahShop_LMA12.bin" "nahShop_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LM0_diffuse" 4 16 0 "gi_nahShop_LM02.bin" "nahShop_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LMA1_diffuse" 4 16 1 "gi_nahShop_LMA13.bin" "nahShop_LMA1_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LM0_diffuse" 4 16 0 "gi_nahShop_LM03.bin" "nahShop_LM0_diffuse0_HDR.lz4" vbTraceTex.bin
+Running ftrace texgiprobesh "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "probes_final" 1924 16 2 "gi_probes4.bin" "probes_lights_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LMA1_final" 4 16 1 "gi_nahShop_LMA14.bin" "nahShop_LMA1_lights_HDR.lz4" vbTraceTex.bin
+Running ftrace texgi "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "nahShop_LM0_final" 4 16 0 "gi_nahShop_LM04.bin" "nahShop_LM0_lights_HDR.lz4" vbTraceTex.bin
+Running ftrace addsh "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "probes_final_" 4 0 2 shcomp_2.bin
+Running denoiser "C:\Users\Oisoi_02\AppData\Local\Temp\frender/nahShop_LMA1_final_HDR.lz4" "C:\Users\Oisoi_02\AppData\Local\Temp\frender/nahShop_LMA1_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "1" "nahShop_LMA1_final_HDR.lz4"
+Running denoiser "C:\Users\Oisoi_02\AppData\Local\Temp\frender/nahShop_LM0_final_HDR.lz4" "C:\Users\Oisoi_02\AppData\Local\Temp\frender/nahShop_LM0_final_HDR.lz4" 2048 0
+Running seamfixer "C:\Users\Oisoi_02\AppData\Local\Temp\frender" "0" "nahShop_LM0_final_HDR.lz4"
+Running halffloat2hdr "C:\Users\Oisoi_02\AppData\Local\Temp\frender/nahShop_LMA1_final_HDR.lz4" "E:/unity/MortalGllitch/Assets/BakeryLightmaps/nahShop_LMA1_final.hdr"
+Running halffloat2hdr "C:\Users\Oisoi_02\AppData\Local\Temp\frender/nahShop_LM0_final_HDR.lz4" "E:/unity/MortalGllitch/Assets/BakeryLightmaps/nahShop_LM0_final.hdr"
+Symbol file LoadedFromMemory doesn't match image E:\unity\MortalGllitch\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
+Symbol file LoadedFromMemory doesn't match image E:\unity\MortalGllitch\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
+Symbol file LoadedFromMemory doesn't match image E:\unity\MortalGllitch\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
+Symbol file LoadedFromMemory doesn't match image E:\unity\MortalGllitch\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
+Symbol file LoadedFromMemory doesn't match image E:\unity\MortalGllitch\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
+Symbol file LoadedFromMemory doesn't match image E:\unity\MortalGllitch\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
+Symbol file LoadedFromMemory doesn't match image E:\unity\MortalGllitch\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
+Symbol file LoadedFromMemory doesn't match image E:\unity\MortalGllitch\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
+Symbol file LoadedFromMemory doesn't match image E:\unity\MortalGllitch\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
+Symbol file LoadedFromMemory doesn't match image E:\unity\MortalGllitch\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
+Symbol file LoadedFromMemory doesn't match image E:\unity\MortalGllitch\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
+Symbol file LoadedFromMemory doesn't match image E:\unity\MortalGllitch\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
+Symbol file LoadedFromMemory doesn't match image E:\unity\MortalGllitch\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
+Symbol file LoadedFromMemory doesn't match image E:\unity\MortalGllitch\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
+Symbol file LoadedFromMemory doesn't match image E:\unity\MortalGllitch\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
+Symbol file LoadedFromMemory doesn't match image E:\unity\MortalGllitch\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
+Symbol file LoadedFromMemory doesn't match image E:\unity\MortalGllitch\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
+Symbol file LoadedFromMemory doesn't match image E:\unity\MortalGllitch\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
+Symbol file LoadedFromMemory doesn't match image E:\unity\MortalGllitch\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
+Symbol file LoadedFromMemory doesn't match image E:\unity\MortalGllitch\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
+Symbol file LoadedFromMemory doesn't match image E:\unity\MortalGllitch\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
+Symbol file LoadedFromMemory doesn't match image E:\unity\MortalGllitch\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
+Symbol file LoadedFromMemory doesn't match image E:\unity\MortalGllitch\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
+Symbol file LoadedFromMemory doesn't match image E:\unity\MortalGllitch\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
+Symbol file LoadedFromMemory doesn't match image E:\unity\MortalGllitch\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
+Symbol file LoadedFromMemory doesn't match image E:\unity\MortalGllitch\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
+Symbol file LoadedFromMemory doesn't match image E:\unity\MortalGllitch\Library\PackageCache\com.unity.ext.nunit@1.0.0\net35\unity-custom\nunit.framework.dll
+Done
+Done
+Done
+Done

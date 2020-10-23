@@ -15,6 +15,7 @@ public class cameraMovement : MonoBehaviour
 	public Transform cameraTransform_target;
 	public Transform cameraTransform_rot;
 	public float camDist = 0;
+	public float camDistFromCollission = 0.01f;
 
 	// maintain a flag internally to reconnect if target is lost or camera is switched
 	bool isFollowing;
@@ -66,10 +67,15 @@ public class cameraMovement : MonoBehaviour
 
 		RaycastHit hit;
 		// Does the ray intersect any objects
-		if (Physics.Raycast(cameraTransform_target.parent.position, cameraTransform_target.parent.TransformDirection(Vector3.back), out hit, camDist))
+		if (Physics.Raycast(cameraTransform_target.parent.position, cameraTransform_target.parent.TransformDirection(Vector3.back), out hit, camDist+.2f))
 		{
+			
 			Debug.DrawRay(cameraTransform_target.parent.position, cameraTransform_target.parent.TransformDirection(Vector3.back) * hit.distance, Color.yellow);
-			cameraTransform.position = hit.point;
+
+			if (hit.distance > camDist) // we raycast a bit further(camdist) to be sure were not barely touching a perpendicular wall which we migh see through
+			{ hit.distance = camDist; }
+			cameraTransform.position =	cameraTransform_target.parent.position + 
+										cameraTransform_target.parent.TransformDirection(Vector3.back) * hit.distance * camDistFromCollission;
 		}
 		//else
 		//{

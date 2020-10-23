@@ -30,6 +30,15 @@ public class move : MonoBehaviourPun
 	cameraMovement camMove;
 
 	public bool enableCamRot = true;
+	public bool enableMove = true;
+
+
+	public AudioClip[] coughing;
+	public AudioClip walk;
+	public AudioClip consume;
+	public AudioClip grabSound;
+	public AudioClip throwSound;
+	AudioSource ass;
 
 	#endregion
 
@@ -39,16 +48,49 @@ public class move : MonoBehaviourPun
 		Cursor.lockState = CursorLockMode.Locked;
 
 		camMove = GetComponent<cameraMovement>();
+
+		ass = GetComponent<AudioSource>();
+
 	}
 
-    // Update is called once per frame
-    void Update()
-    {
+	// Update is called once per frame
+	void Update()
+	{
+		
+		if (anim.GetFloat("speed") > .1f)
+		{
+			// walking sound
+			ass.clip = walk;
+			if (!ass.isPlaying)
+				ass.Play();
+			if (!ass.loop)
+				ass.loop = true;
+		}
+		else
+		{
+			if (ass.clip == walk)
+			{
+				ass.Stop();
+				ass.loop = false;
+			}
+			// coughing sound (only others)
+			if (photonView.IsMine == false)
+				if (Random.value < 0.1f * Time.deltaTime)
+				{
+					ass.clip = coughing[(int)(Random.value * coughing.Length)];
+					ass.Play();
+				}
+		}
 
+
+
+		// only continue if its the local player
 		if (photonView.IsMine == false && PhotonNetwork.IsConnected == true)
 		{
 			return;
 		}
+
+
 
 		//ANIM
 		anim.SetFloat("speed", Mathf.Abs( Input.GetAxis("Vertical")) + Mathf.Abs(Input.GetAxis("Horizontal")) );
@@ -76,6 +118,8 @@ public class move : MonoBehaviourPun
 				if (itemGrabbed != null)
 				{
 					anim.SetBool("consume", true);
+					ass.clip = consume;
+					ass.Play();
 				}
 				else
 				{
@@ -88,21 +132,23 @@ public class move : MonoBehaviourPun
 			}
 		}
 
-		// MOVE
-		Rigid.MovePosition(transform.position + (transform.forward * Input.GetAxis("Vertical") * MoveSpeed * Time.deltaTime) + (transform.right * Input.GetAxis("Horizontal") * MoveSpeed * Time.deltaTime));
-		if (Input.GetKeyDown("space"))
-			Rigid.AddForce(transform.up * JumpForce);
-
-
-		// GRAb
-		if (Input.GetMouseButtonDown(0))
+		if (enableMove)
 		{
-			grabbstuff();
-		}
-		if (itemGrabbed == null)
-			grabLayerWeight -= .2f * Time.deltaTime;
-		anim.SetLayerWeight(1, grabLayerWeight); // should go back to 0 if nothing is grabbed
+			// MOVE
+			Rigid.MovePosition(transform.position + (transform.forward * Input.GetAxis("Vertical") * MoveSpeed * Time.deltaTime) + (transform.right * Input.GetAxis("Horizontal") * MoveSpeed * Time.deltaTime));
+			if (Input.GetKeyDown("space"))
+				Rigid.AddForce(transform.up * JumpForce);
 
+
+			// GRAb
+			if (Input.GetMouseButtonDown(0))
+			{
+				grabbstuff();
+			}
+			if (itemGrabbed == null)
+				grabLayerWeight -= .2f * Time.deltaTime;
+			anim.SetLayerWeight(1, grabLayerWeight); // should go back to 0 if nothing is grabbed
+		}
 
 	}
 
@@ -160,7 +206,16 @@ public class move : MonoBehaviourPun
 						itemGrabbed.GetComponent<GoToWebShop>().enableCasetteMenu();
 						anim.SetBool("casetteToFace", true);
 						enableCamRot = false;
+#if UNITY_WEBGL
+						GetComponent<saveData>().appendFileAndSend("CasseteClickData" , (Time.timeSinceLevelLoad/60f).ToString() + "(minutes to click)   " +
+																						System.DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + "(Date Time)   " +
+																						PhotonNetwork.NickName + "(user)");
+#endif
 					}
+
+
+					ass.clip = grabSound;
+					ass.Play();
 
 
 					PhotonView photonView_grabbedItem = itemGrabbed.GetComponent<PhotonView>();
@@ -235,6 +290,11 @@ public class move : MonoBehaviourPun
 				enableCamRot = true;
 			}
 
+			if (ass != null)
+			{
+				ass.clip = throwSound;
+				ass.Play();
+			}
 			anim.SetTrigger("throw");
 
 			itemUnGrabbed = itemGrabbed;

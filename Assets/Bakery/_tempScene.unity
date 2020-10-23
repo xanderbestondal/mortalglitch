@@ -122,7 +122,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &349637238
+--- !u!1 &1488715364
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -130,8 +130,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 349637240}
-  - component: {fileID: 349637239}
+  - component: {fileID: 1488715366}
+  - component: {fileID: 1488715365}
   m_Layer: 0
   m_Name: New Game Object
   m_TagString: Untagged
@@ -139,13 +139,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!220 &349637239
+--- !u!220 &1488715365
 LightProbeGroup:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 349637238}
+  m_GameObject: {fileID: 1488715364}
   m_Enabled: 1
   m_SourcePositions:
   - {x: -11.720739, y: 2.3363895, z: -8.34069}
@@ -298,13 +298,13 @@ LightProbeGroup:
   - {x: 13.087418, y: 0.28796577, z: 5.4851594}
   - {x: 13.132706, y: 0.28796577, z: -5.652102}
   m_Dering: 1
---- !u!4 &349637240
+--- !u!4 &1488715366
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 349637238}
+  m_GameObject: {fileID: 1488715364}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2.6031213, y: 0.096141815, z: 0.017311275}
   m_LocalScale: {x: 1, y: 1, z: 1}

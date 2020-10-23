@@ -18,6 +18,8 @@ namespace Com.Oisoi.NahShop
 
 		saveData SaveData;
 
+		public AudioSource ass;
+
 		//RectTransform customCursorRect;
 
 		// Start is called before the first frame update
@@ -38,6 +40,7 @@ namespace Com.Oisoi.NahShop
 			PhotonView.Get(this).RPC("ChatMessage", RpcTarget.All, "I joined ", userName);
 
 			chatTextfield.onEndEdit.AddListener(delegate { sendMessage(); });
+			
 		}
 
 		Rect GetWorldSapceRect(RectTransform rt)
@@ -122,6 +125,8 @@ namespace Com.Oisoi.NahShop
 			if (info.Sender.IsMasterClient)
 				addedString = '\n' + sendingUser + " " + "  : " + b + " (master)";
 			chatColumn.text = chatColumn.text + addedString;
+
+			ass.Play();
 
 			//SaveData.username = userName;
 			//SaveData.updateChatMessage(addedString);

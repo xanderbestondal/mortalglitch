@@ -47,6 +47,9 @@ GameObject:
   - component: {fileID: 7764840618111279514}
   - component: {fileID: 7572697934365314930}
   - component: {fileID: 9175352781526083204}
+  - component: {fileID: 2366352558174221527}
+  - component: {fileID: 8557186879218676619}
+  - component: {fileID: 4409749131854685973}
   m_Layer: 2
   m_Name: player
   m_TagString: Untagged
@@ -109,6 +112,15 @@ MonoBehaviour:
   camTarg: {fileID: 2129198055}
   grabHandTransform: {fileID: 8148502905459692075}
   enableCamRot: 1
+  enableMove: 1
+  coughing:
+  - {fileID: 8300000, guid: 55dca6b75b7e2e143a28d546934093a0, type: 3}
+  - {fileID: 8300000, guid: 83fd476f163b1424d8f691146518876f, type: 3}
+  - {fileID: 8300000, guid: d0809ed6399a7254f8b4037522569b4f, type: 3}
+  walk: {fileID: 8300000, guid: 3e0fbd7f0d6536644a973292f4988f4b, type: 3}
+  consume: {fileID: 8300000, guid: 0079d30477e1bdc4aa584219937609e5, type: 3}
+  grabSound: {fileID: 8300000, guid: fbbe118c9fceb464d9658cb8b722aecf, type: 3}
+  throwSound: {fileID: 8300000, guid: 96b3d90445c75cc4aa208d08d094eed3, type: 3}
 --- !u!114 &89888368387321184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -193,6 +205,7 @@ MonoBehaviour:
   cameraTransform_target: {fileID: 2129198055}
   cameraTransform_rot: {fileID: 89888368412461092}
   camDist: 0
+  camDistFromCollission: 0.95
 --- !u!114 &9175352781526083204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -200,12 +213,138 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 89888368387321189}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3f113683363bc37479ceeb32ebd24c2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   username: 
+  camRot: {fileID: 89888368412461092}
+  campos: {fileID: 2129198055}
+--- !u!82 &2366352558174221527
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 89888368387321189}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!111 &8557186879218676619
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 89888368387321189}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
+--- !u!114 &4409749131854685973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 89888368387321189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3788a066fe92ae045a4fede5a02bfd37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camTarg: {fileID: 8512297396898844135}
 --- !u!1 &89888368412461083
 GameObject:
   m_ObjectHideFlags: 0
@@ -319,10 +458,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.31
-  m_Height: 1.68
+  m_Radius: 0.23091492
+  m_Height: 1.1637456
   m_Direction: 1
-  m_Center: {x: 0, y: 0.85, z: 0}
+  m_Center: {x: 0, y: 0.5918728, z: 0}
 --- !u!1 &1399151572969423775
 GameObject:
   m_ObjectHideFlags: 0
@@ -494,6 +633,9 @@ MonoBehaviour:
   - Type: 9
     SynchronizeType: 1
     Name: throw
+  - Type: 4
+    SynchronizeType: 0
+    Name: casetteToFace
   m_SynchronizeLayers:
   - SynchronizeType: 0
     LayerIndex: 0
@@ -511,7 +653,7 @@ GameObject:
   - component: {fileID: 3811847267128005559}
   - component: {fileID: 6324243458145816925}
   m_Layer: 2
-  m_Name: AUDIO
+  m_Name: sideA_sideB
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -545,7 +687,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -639,6 +781,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e87f35a1e222c348bc77b08548743c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sideA: {fileID: 8300000, guid: d77296be9ae3fde408024d13633e778b, type: 3}
+  sideB: {fileID: 8300000, guid: 86cca467dd8c70e4ab7f112779ebac90, type: 3}
 --- !u!1 &6297261265756497953
 GameObject:
   m_ObjectHideFlags: 0
