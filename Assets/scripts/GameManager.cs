@@ -16,7 +16,7 @@ namespace Com.Oisoi.NahShop
 	{
 		[Tooltip("The prefab to use for representing the player")]
 		public GameObject playerPrefab;
-		GameObject instantiatedPlayer;
+		public GameObject instantiatedPlayer;
 
 		#region Photon Callbacks
 
@@ -78,35 +78,29 @@ namespace Com.Oisoi.NahShop
 		private void Start()
 		{
 			currentRoom = PhotonNetwork.CurrentRoom.Name;
+			
+			// check if player is not remaining from recent disconnect
+			//foreach (PlayerManager p in FindObjectsOfType<PlayerManager>())
+			//{
+			//	if (p.GetComponent<PhotonView>().IsMine)
+			//	{
+			//		print("RECOVERED PREVIOUS PLAYER INSTANCE");
+			//		PlayerManager.LocalPlayerInstance = p.gameObject;
+			//	}
+			//}
 
-			if (playerPrefab == null)
+			//Instantiate(playerPrefab);
+			if (PlayerManager.LocalPlayerInstance == null)
 			{
-				Debug.LogError("<Color=Red><a>Missing</a></Color> playerPrefab Reference. Please set it up in GameObject 'Game Manager'", this);
+				Debug.LogFormat("We are Instantiating LocalPlayer from {0}", SceneManagerHelper.ActiveSceneName);
+				// we're in a room. spawn a character for the local player. it gets synced by using PhotonNetwork.Instantiate
+				instantiatedPlayer = PhotonNetwork.Instantiate(this.playerPrefab.name, new Vector3(-3f, 0f, 0f), Quaternion.Euler(0,90,0), 0);
 			}
 			else
 			{
-				// check if player is not remaining from recent disconnect
-				//foreach (PlayerManager p in FindObjectsOfType<PlayerManager>())
-				//{
-				//	if (p.GetComponent<PhotonView>().IsMine)
-				//	{
-				//		print("RECOVERED PREVIOUS PLAYER INSTANCE");
-				//		PlayerManager.LocalPlayerInstance = p.gameObject;
-				//	}
-				//}
-
-				//Instantiate(playerPrefab);
-				if (PlayerManager.LocalPlayerInstance == null)
-				{
-					Debug.LogFormat("We are Instantiating LocalPlayer from {0}", SceneManagerHelper.ActiveSceneName);
-					// we're in a room. spawn a character for the local player. it gets synced by using PhotonNetwork.Instantiate
-					instantiatedPlayer = PhotonNetwork.Instantiate(this.playerPrefab.name, new Vector3(-3f, 0f, 0f), Quaternion.Euler(0,90,0), 0);
-				}
-				else
-				{
-					Debug.LogFormat("Ignoring scene load for {0}", SceneManagerHelper.ActiveSceneName);
-				}
+				Debug.LogFormat("Ignoring scene load for {0}", SceneManagerHelper.ActiveSceneName);
 			}
+			
 		}
 
 
