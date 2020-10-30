@@ -10,6 +10,7 @@ namespace Com.Oisoi.NahShop
 	{
 
 		bool slide;
+		Transform playerpos;
 		// Start is called before the first frame update
 		void Start()
 		{
@@ -20,7 +21,10 @@ namespace Com.Oisoi.NahShop
 		void Update()
 		{
 			if (slide)
-				transform.localPosition = Vector3.Lerp(transform.localPosition, transform.localPosition+ transform.up, Time.deltaTime);
+			{
+				float slidespeed = .1f/Vector3.Distance(playerpos.position, transform.position);
+				transform.localPosition = Vector3.Lerp(transform.localPosition, transform.localPosition + transform.up, Time.deltaTime * slidespeed);
+			}
 		}
 
 		private void OnTriggerEnter(Collider other)
@@ -31,6 +35,7 @@ namespace Com.Oisoi.NahShop
 				if (other.attachedRigidbody.GetComponent<PhotonView>().IsMine)
 				{
 					slide = true;
+					playerpos = other.attachedRigidbody.GetComponent<Transform>();
 				}
 			}
 

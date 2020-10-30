@@ -119,7 +119,7 @@ namespace Com.Oisoi.NahShop
 #if UNITY_WEBGL
 			if (SaveData != null)
 			{
-				SaveData.updatePosRotMessage();
+				//SaveData.updatePosRotMessage();
 			}
 #endif
 		}
